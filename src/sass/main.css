@@ -114,4 +114,50 @@ button {
   .section__title {
     font-size: 46px;
   }
+}
+.hero__title {
+  font-size: 20px;
+  max-width: 280px;
+}
+
+.hero__guaranteed-title {
+  display: block;
+  color: var(--primary-title-color);
+}
+
+.hero__description {
+  display: block;
+}
+
+.hero {
+  background-image: url(../images/hero/hero-bg-mob.png);
+  background-repeat: no-repeat;
+  box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+}
+
+@media screen and (max-width: 1366px) {
+  .hero__points-title {
+    display: block;
+    color: var(--accent-color);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-size: 26px;
+    max-width: 332px;
+  }
+
+  .hero {
+    background-image: url(../images/hero/hero-bg-desk.png);
+  }
+}
+@media screen and (min-width: 1366px) {
+  .hero__title {
+    font-size: 58px;
+    max-width: 560px;
+  }
+
+  .hero {
+    background-image: url(../images/hero/hero-bg-desk.png);
+  }
 }/*# sourceMappingURL=main.css.map */
