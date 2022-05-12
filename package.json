@@ -3,7 +3,7 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://maryna-haliieva.github.io/parcel-hellen-202accepted",
+  "homepage": "https://maryna-haliieva.github.io/hellen-202accepted",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /hellen-202accepted/"

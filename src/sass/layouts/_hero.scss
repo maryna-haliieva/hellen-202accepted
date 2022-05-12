@@ -8,22 +8,47 @@
     color: var(--primary-title-color);
 }
 
-// .hero__container {
-//     display: block;
-// }
+.hero__container {
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    background-image: url(../images/hero/hero-mob.png);
+    background-repeat: no-repeat;
+    // background-position: center 56px, 334px 0;
+}
 
 .hero__description {
     display: block;
 }
 
 .hero {
+    // background-position: center 56px, 334px 0;
+    background-size: cover;
 
-    background-image:
-        url(../images/hero/hero-bg-mob.png);
+    background-image: url(../images/hero/hero-bg-mob.png);
 
     background-repeat: no-repeat;
     box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+}
 
+.hero__button {
+    display: block;
+
+    width: 280px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    margin: 40px auto;
+
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1, 2;
+
+
+
+    color: var(--secondary-title-color);
+    background-color: var(--accent-color);
+    border: none;
 }
 
 @media screen and (max-width:1366px) {
