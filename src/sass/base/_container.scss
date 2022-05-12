@@ -1,0 +1,32 @@
+// COMMON (фон для наглядности можно включить)
+.container {
+  margin: 0 auto;
+  // background-color: teal;
+}
+
+// PHONES
+@media screen and (min-width: 480px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 480px;
+  }
+}
+
+// TABLETS
+@media screen and (min-width: 768px) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+    width: 768px;
+  }
+}
+
+// DESKTOPS (тут под вопросом что за min-width и width)
+@media screen and (min-width: 1366px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 1680px;
+  }
+}
