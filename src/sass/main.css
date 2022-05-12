@@ -101,7 +101,7 @@ button {
   color: var(--primary-title-color);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .section__title {
     font-size: 20px;
   }
@@ -183,4 +183,71 @@ button {
   .hero {
     background-image: url(../images/hero/hero-bg-desk.png);
   }
+}
+.reveiwes {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.reveiwes .section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.reveiwes__block {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.reveiwes__name {
+  margin-bottom: 10px;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+  color: var(--accent-color);
+}
+
+.reveiwes__course {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: 0.08em;
+  color: var(--primary-text-color);
+}
+
+.reveiwes__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.67;
+  color: var(--secondary-text-color);
+}
+
+.reveiwes__more {
+  text-decoration: underline;
+  color: var(--accent-color);
+}
+
+.reveiwes__social {
+  display: block;
+  width: 30px;
+  height: 17px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  fill: #436EAB;
+}
+
+.reveiwes__icon {
+  display: block;
+  width: 25px;
+  height: 15px;
+}
+
+.reveiwes__avatar {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  background-color: teal;
 }/*# sourceMappingURL=main.css.map */
