@@ -69,6 +69,7 @@ button {
 }
 
 .container {
+  max-width: 1680px;
   margin: 0 auto;
 }
 
@@ -86,7 +87,7 @@ button {
     width: 768px;
   }
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1200px) {
   .container {
     padding-left: 16px;
     padding-right: 16px;

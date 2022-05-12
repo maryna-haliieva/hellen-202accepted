@@ -1,5 +1,6 @@
 // COMMON (фон для наглядности можно включить)
 .container {
+  max-width: 1680px;
   margin: 0 auto;
   // background-color: teal;
 }
@@ -23,7 +24,7 @@
 }
 
 // DESKTOPS (тут под вопросом что за min-width и width)
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1200px) {
   .container {
     padding-left: 16px;
     padding-right: 16px;
