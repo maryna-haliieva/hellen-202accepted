@@ -144,7 +144,7 @@ button {
   color: var(--accent-color);
 }
 
-@media screen and (max-width: 1365px) {
+@media screen and (max-width: 1679px) {
   .guarantee__item {
     font-size: 12px;
     line-height: 1.67;
@@ -187,7 +187,7 @@ button {
   }
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1680px) {
   .guarantee__container-list {
     width: 1090px;
   }
