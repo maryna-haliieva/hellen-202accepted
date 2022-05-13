@@ -1,0 +1,106 @@
+.program {
+    background-color: var(--secondary-bg-color);
+    padding-top: 80px;
+}
+
+.section-title {
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 1.304;
+    letter-spacing: 0.03em;
+
+    color: var(--primary-bg-color);
+}
+
+.semester-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.semester-list__item {
+    max-width: 240px;
+
+    &:not(:last-child) {
+        margin-right: 40px;
+    }
+}
+
+.semester-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    color: var(--primary-bg-color);
+}
+
+.semester-number {
+    font-size: 30px;
+}
+
+.subject-list__item {
+    margin-top: 24px;
+}
+
+.subject-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.65;
+    letter-spacing: 0.08em;
+
+    color: var(--accent-color);
+}
+
+.topic-list__item {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.08em;
+
+    color: var(--primary-text-color);
+}
+
+.benefits-list-container {
+    z-index: 1;
+}
+
+.benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 60px 32px 60px 140px;
+    margin-right: -204px;
+    margin-top: -40px;
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+
+    background-color: var(--secondary-title-color);
+}
+
+.benefits-list__item {
+    display: block;
+    flex-basis: calc((100% - 3 * 204px) / 3);
+    max-width: 356px;
+    margin-right: 204px;
+    margin-top: 40px;
+}
+
+.benefits-list__number {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.65;
+    letter-spacing: 0.08em;
+
+    color: var(--accent-color);
+}
+
+.benefits-list__overtitle {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.08em;
+    margin-top: 8px;
+
+    color: var(--primary-title-color);
+}
