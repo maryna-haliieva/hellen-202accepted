@@ -174,7 +174,8 @@ button {
   padding-top: 40px;
   background-image: url(../images/program/program-mob.png);
   background-repeat: no-repeat;
-  background-position: 170px 1414px;
+  background-position: 330px 1073px;
+  padding-bottom: 604px;
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -185,7 +186,15 @@ button {
 
 @media screen and (min-width: 768px) {
   .program {
-    padding-top: 60px;
+    background-image: url(../images/program/program-tab.png);
+    background-position: 0;
+    padding: 60px 75px 0 103px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .program .program {
+    background-image: url(../images/program/program-tab@2x.png);
   }
 }
 
@@ -195,9 +204,16 @@ button {
   }
 }
 
-.program__container {
+.program-container {
   padding-left: 62px;
   padding-right: 56px;
+}
+
+@media screen and (min-width: 768px) {
+  .program-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .section-title {
@@ -212,6 +228,7 @@ button {
 @media screen and (min-width: 768px) {
   .section-title {
     font-size: 26px;
+    text-align: start;
   }
 }
 
@@ -225,6 +242,12 @@ button {
   margin-top: 40px;
   padding-left: 26px;
   border-left: 1px solid var(--secondary-title-color);
+}
+
+@media screen and (min-width: 768px) {
+  .semester-list {
+    padding-left: 113px;
+  }
 }
 
 @media screen and (min-width: 1680px) {
@@ -265,8 +288,22 @@ button {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .subject-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .subject-list__item {
   margin-top: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .subject-list__item:not(:last-child) {
+    margin-right: 100px;
+  }
 }
 
 @media screen and (min-width: 1680px) {
