@@ -329,12 +329,11 @@ button {
   .guarantee__text {
     margin-left: 27px;
   }
-}
-
-.guarantee__text::before {
-  width: 15px;
-  height: 20px;
-  left: -8px;
+  .guarantee__text::before {
+    width: 15px;
+    height: 20px;
+    left: -8px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -382,14 +381,14 @@ button {
     line-height: 1.4;
     letter-spacing: 0.3px;
   }
+  .guarantee__text {
+    margin-left: 41px;
+  }
   .guarantee__text::before {
     width: 22px;
     height: 30px;
     left: -12px;
     background-size: contain;
-  }
-  .guarantee__text {
-    margin-left: 41px;
   }
 }
 
