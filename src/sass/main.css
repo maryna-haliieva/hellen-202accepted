@@ -121,30 +121,127 @@ button {
   max-width: 280px;
 }
 
+
+.hero__container {
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+@media screen and (max-width: 767px) {
+  .hero__container {
+    padding-right: 20px;
+    padding-left: 20px;
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero__container {
+    padding-right: 42px;
+    padding-left: 42px;
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__container {
+    padding-right: 15px;
+    padding-left: 15px;
+    max-width: 1680px;
+  }
+}
+
+.hero {
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 767px) {
+  .hero {
+    height: 579px;
+    padding-top: 50px;
+    background-position: center;
+    background-size: 208px 178px, calc(100% + 320px) 670px;
+    background-image: url(../images/hero/hero-bg-mob.png);
+  }
+}
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/hero/hero-bg-mob.png);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero {
+    height: 488px;
+    padding-top: 70px;
+    background-position: calc(50% + 178px) 80px, -50px -100px;
+    background-size: 376px 320px, calc(100% + 160px) 609px;
+    background-image: url(../images/hero/hero-bg-desk.png);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/hero/hero-bg-desk.png);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 824px;
+    padding-top: 125px;
+    overflow: hidden;
+    background-position: calc(50% + 380px) 50px, -30px -60px;
+    background-size: 842px 718px, calc(100% + 60px) 878px;
+    background-image: url(../images/hero/hero-bg-desk.png);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/hero/hero-bg-desk.png);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero-title {
+    width: 280px;
+    margin-bottom: 8px;
+    font-size: 20px;
+    letter-spacing: 0.3;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero-title {
+    width: 280px;
+    font-size: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    width: 640px;
+    margin-bottom: 24px;
+    font-size: 46px;
+  }
+}
+
 .hero__guaranteed-title {
   display: block;
   color: var(--primary-title-color);
 }
-
-.hero__container {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-image: url(../images/hero/hero-mob.png);
-  background-repeat: no-repeat;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero__guaranteed-title {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__guaranteed-title {
+    width: 550px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    line-height: 1.65;
+  }
 }
 
-.hero__description {
-  display: block;
+@media screen and (max-width: 1200px) {
+  .hero__points-title {
+    display: block;
+    color: var(--accent-color);
+  }
 }
-
-.hero {
-  background-size: cover;
-  background-image: url(../images/hero/hero-bg-mob.png);
-  background-repeat: no-repeat;
-  -webkit-box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
-          box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
-}
-
 .hero__button {
   display: block;
   width: 280px;
@@ -154,37 +251,12 @@ button {
   font-size: 12px;
   font-weight: 700;
   line-height: 1, 2;
+  text-transform: uppercase;
   color: var(--secondary-title-color);
   background-color: var(--accent-color);
   border: none;
 }
 
-@media screen and (max-width: 1366px) {
-  .hero__points-title {
-    display: block;
-    color: var(--accent-color);
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .hero__title {
-    font-size: 26px;
-    max-width: 332px;
-  }
-  .hero {
-    background-image: url(../images/hero/hero-bg-desk.png);
-  }
-}
-
-@media screen and (min-width: 1366px) {
-  .hero__title {
-    font-size: 58px;
-    max-width: 560px;
-  }
-  .hero {
-    background-image: url(../images/hero/hero-bg-desk.png);
-  }
-}
 
 .how-we-do__title {
   text-align: center;
@@ -459,4 +531,6 @@ button {
   border-radius: 50%;
   background-color: teal;
 }
-/*# sourceMappingURL=main.css.map */
+
+}/*# sourceMappingURL=main.css.map */
+
