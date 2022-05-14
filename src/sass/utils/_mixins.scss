@@ -14,6 +14,7 @@
 	@media screen and (min-width: 1680px) {
 		@content;
 	}
+
 }
 
 @mixin font ($fw, $fs, $lh, $ls) {
@@ -21,4 +22,5 @@
 	font-size: $fs;
 	line-height: $lh;
 	letter-spacing: $ls;
+
 }
