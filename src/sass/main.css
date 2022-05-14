@@ -95,7 +95,7 @@ button {
   color: var(--primary-title-color);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .section__title {
     font-size: 20px;
   }
@@ -261,4 +261,159 @@ button {
   color: var(--secondary-title-color);
   background-color: var(--accent-color);
   border: none;
+
+.guarantee__title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.guarantee__container {
+  background-color: var(--tertiary-bg-color);
+}
+
+.guarantee__container-list {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.guarantee__item {
+  font-weight: 500;
+  color: var(--secondary-text-color);
+}
+
+.guarantee__item_akcent {
+  color: var(--accent-color);
+}
+
+@media screen and (max-width: 1679px) {
+  .guarantee__item {
+    font-size: 12px;
+    line-height: 1.67;
+    letter-spacing: 0.6px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+
+  .guarantee__container-list {
+    width: 280px;
+  }
+
+  .guarantee__list {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .guarantee__item {
+    margin-left: 20px;
+  }
+
+  .guarantee__item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .guarantee__container-list {
+    width: 599px;
+  }
+
+  .guarantee__list {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .guarantee__item {
+    margin-left: 24px;
+  }
+
+  .guarantee__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1680px) {
+  .guarantee__container-list {
+    width: 1090px;
+  }
+
+  .guarantee__list {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .guarantee__item {
+    margin-left: 30px;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: 0.3px;
+  }
+}
+.reveiwes {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.reveiwes .section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.reveiwes__block {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.reveiwes__name {
+  margin-bottom: 10px;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+  color: var(--accent-color);
+}
+
+.reveiwes__course {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: 0.08em;
+  color: var(--primary-text-color);
+}
+
+.reveiwes__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.67;
+  color: var(--secondary-text-color);
+}
+
+.reveiwes__more {
+  text-decoration: underline;
+  color: var(--accent-color);
+}
+
+.reveiwes__social {
+  display: block;
+  width: 30px;
+  height: 17px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  fill: #436EAB;
+}
+
+.reveiwes__icon {
+  display: block;
+  width: 25px;
+  height: 15px;
+}
+
+.reveiwes__avatar {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  background-color: teal;
+
 }/*# sourceMappingURL=main.css.map */
