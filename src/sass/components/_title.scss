@@ -7,7 +7,7 @@
 }
 
 // PHONES
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
     .section__title {
         font-size: 20px;
     }
@@ -21,7 +21,7 @@
 }
 
 // DESKTOPS
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1680px) {
     .section__title {
         font-size: 46px;
     }
