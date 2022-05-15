@@ -6,82 +6,38 @@
 }
 
 .hero__container {
-
+    margin: auto;
     padding-top: 40px;
-    padding-bottom: 40px;
+}
+
+.container__text {
+    width: 280px;
+    display: block;
+    margin: 0 auto;
 }
 
 .hero__title {
+    margin-bottom: 8px;
     font-size: 20px;
-    max-width: 280px;
+}
+
+.hero__description {
+    margin-bottom: 40px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.57;
 }
 
 .hero__guaranteed-title {
     display: block;
+    font-weight: 700;
     color: var(--primary-title-color);
-}
-
-.hero__description {
-    display: block;
 }
 
 .hero__points-title {
     display: block;
+    font-weight: 700;
     color: var(--accent-color);
-}
-
-@media screen and (min-width:480px) {
-
-    .hero {
-        background-image:
-            url(../images/hero/hero-bg-mob.png);
-        background-repeat: no-repeat;
-        background-position: calc(100% - 10%) calc(100% - 13%);
-    }
-
-    .hero__guaranteed-title {
-        display: block;
-        color: var(--primary-title-color);
-    }
-
-    .hero__points-title {
-        display: block;
-        color: var(--accent-color);
-    }
-}
-
-@media screen and (min-width:768px) {
-    .hero {
-        background-image:
-            url(../images/hero/hero-bg-tab.png);
-        background-repeat: no-repeat;
-        background-position: calc(100% - 10%) calc(100% - 13%);
-    }
-
-    .hero__title {
-        font-size: 26px;
-        max-width: 332px;
-    }
-
-    .hero__points-title {
-        display: block;
-        color: var(--accent-color);
-    }
-}
-
-
-@media screen and (min-width:1680px) {
-
-    .hero {
-        background-image: url(../images/hero/hero-bg-desk.png);
-        background-repeat: no-repeat;
-        background-position: calc(100% - 10%) calc(100% - 13%);
-    }
-
-    .hero__title {
-        font-size: 58px;
-        max-width: 560px;
-    }
 }
 
 .hero__button {
@@ -89,10 +45,10 @@
     width: 280px;
     padding-top: 14px;
     padding-bottom: 14px;
-    margin: 40px auto;
+    margin: 0 auto 40px;
     font-size: 12px;
     font-weight: 700;
-    line-height: 1, 2;
+    line-height: 1.2;
     text-transform: uppercase;
     text-align: center;
     color: var(--secondary-title-color);
@@ -101,6 +57,98 @@
 }
 
 .hero__img {
-    display: block;
-    margin: auto;
+    width: 208px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+
+    .hero {
+        background-image:
+            url(../images/hero/hero-bg-mob.png);
+        background-repeat: no-repeat;
+        background-position: calc(100% - 10%) calc(100% - 13%);
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        background-image:
+            url(../images/hero/hero-bg-tab.png);
+        background-repeat: no-repeat;
+        background-position: calc(100% - 10%) calc(100% - 13%);
+    }
+
+    .hero__container {
+        display: flex;
+        padding-top: 80px;
+        justify-content: space-between;
+    }
+
+    .container__text {
+        max-width: 318px;
+        margin-left: 42px;
+        // margin-right: 58px;
+    }
+
+    .hero__title {
+        width: 332px;
+        font-size: 26px;
+    }
+
+    .hero__description {
+        margin-bottom: 48px;
+    }
+
+    .hero__button {
+        width: 260px;
+        margin-left: 0;
+        margin-bottom: 126px;
+    }
+
+    .hero__img {
+        width: 376px;
+    }
+
+
+    @media screen and (min-width: 1680px) {
+
+        .hero {
+            background-image: url(../images/hero/hero-bg-desk.png);
+            background-repeat: no-repeat;
+            background-position: calc(100% - 10%) calc(100% - 13%);
+        }
+
+        .container__text {
+            max-width: 560px;
+            width: 560px;
+            margin-left: 16px;
+            margin-right: 58px;
+        }
+
+        .hero__title {
+            width: 560px;
+            font-size: 58px;
+        }
+
+        .hero__description {
+            width: 493px;
+            font-size: 20px;
+        }
+
+        .hero__img {
+            width: 842px;
+        }
+
+        .hero__button {
+            width: 354px;
+            padding-top: 26px;
+            padding-bottom: 26px;
+            // margin-bottom: 264px;
+
+            font-size: 14px;
+        }
+    }
+
 }
