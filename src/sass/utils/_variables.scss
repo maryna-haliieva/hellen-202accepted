@@ -1,5 +1,5 @@
 :root {
-  --accent-color: rgb(255, 107, 9);
+  --accent-color: #FF6B09;
   --primary-title-color: #111518;
   --secondary-title-color: #fff;
   --primary-text-color: #b9b9b9;
@@ -9,4 +9,6 @@
   --tertiary-bg-color: #f1f1f1;
   --footerfirst-bg-color: #e5e5e5;
   --footersecond-bg-color: #111518;
+  --duration: 250ms;
+  --timing-function: linear;
 }
