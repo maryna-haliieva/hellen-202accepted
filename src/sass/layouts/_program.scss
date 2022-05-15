@@ -1,0 +1,164 @@
+.program {
+  background-color: var(--secondary-bg-color);
+  padding-top: 40px;
+  background-image: url(../images/program/program-mob.png);
+  background-repeat: no-repeat;
+  background-position: 330px 1073px;
+  padding-bottom: 604px;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .program {
+      background-image: url(../images/program/program-mob@2x.png);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/program/program-tab.png);
+    background-position: 0;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      .program {
+        background-image: url(../images/program/program-tab@2x.png);
+      }
+    }
+
+    padding: 60px 75px 0 103px;
+    // padding-top: 60px;
+  }
+
+  @media screen and (min-width: 1680px) {
+    padding-top: 80px;
+  }
+}
+
+.program-container {
+  padding-left: 62px;
+  padding-right: 56px;
+
+  // background-image: url(../images/program/program-mob.png);
+  // background-repeat: no-repeat;
+  // background-position: 330px 1073px;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.section-title {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.304;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  color: var(--primary-bg-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    text-align: start;
+  }
+
+  @media screen and (min-width: 1680px) {
+    font-size: 46px;
+  }
+}
+
+.semester-list {
+  margin-top: 40px;
+  padding-left: 26px;
+
+  border-left: 1px solid var(--secondary-title-color);
+
+  @media screen and (min-width: 768px) {
+    padding-left: 113px;
+  }
+
+  @media screen and (min-width: 1680px) {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+  }
+}
+
+.semester-list__item {
+  // max-width: 240px;
+
+  // &:not(:last-child) {
+  //   margin-right: 40px;
+  // }
+}
+
+.semester-list__item:not(:first-child) {
+  margin-top: 40px;
+}
+
+.semester-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: var(--primary-bg-color);
+
+  @media screen and (min-width: 1680px) {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
+
+.semester-number {
+  @media screen and (min-width: 1680px) {
+    font-size: 30px;
+  }
+}
+
+.subject-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.subject-list__item {
+  margin-top: 4px;
+
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 100px;
+    }
+  }
+
+  @media screen and (min-width: 1680px) {
+    margin-top: 24px;
+  }
+}
+
+.subject-title {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.65;
+  letter-spacing: 0.08em;
+  margin-top: 4px;
+  margin-bottom: 4px;
+
+  color: var(--accent-color);
+
+  @media screen and (min-width: 1680px) {
+    font-size: 20px;
+  }
+}
+
+.topic-list__item {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.08em;
+  opacity: 0.5;
+
+  color: var(--primary-text-color);
+
+  @media screen and (min-width: 1680px) {
+    font-size: 18px;
+  }
+}

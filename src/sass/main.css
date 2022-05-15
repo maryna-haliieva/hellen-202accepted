@@ -86,16 +86,20 @@ button {
     width: 480px;
   }
 }
+
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
   }
 }
+
 @media screen and (min-width: 1680px) {
+
   .container {
     width: 1680px;
   }
 }
+
 .section__title {
   font-weight: 800;
   line-height: 1.3;
@@ -108,16 +112,25 @@ button {
     font-size: 20px;
   }
 }
+
 @media screen and (min-width: 768px) {
   .section__title {
     font-size: 26px;
   }
 }
+
 @media screen and (min-width: 1680px) {
+
   .section__title {
     font-size: 46px;
   }
 }
+
+
+.hero__title {
+  font-size: 20px;
+  max-width: 280px;
+
 .hero__container {
   margin: 0 auto;
   padding-top: 40px;
@@ -206,13 +219,7 @@ button {
     font-size: 26px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .hero-title {
-    width: 640px;
-    margin-bottom: 24px;
-    font-size: 46px;
-  }
-}
+
 
 .hero__guaranteed-title {
   display: block;
@@ -248,6 +255,7 @@ button {
   .button-hero {
     margin-bottom: 241px;
   }
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -256,6 +264,7 @@ button {
     color: var(--accent-color);
   }
 }
+
 .hero__button {
   display: block;
   width: 280px;
@@ -524,6 +533,7 @@ button {
     width: 100%;
   }
 }
+
 @media screen and (min-width: 768px) {
   .guarantee__container-list {
     width: 599px;
@@ -744,6 +754,7 @@ button {
     font-size: 26px;
     margin-bottom: 40px;
   }
+}
 
   .reveiwes__block {
     padding: 40px 48px;
@@ -1102,11 +1113,13 @@ button {
   }
 }
 /* 1200 px + */
-@media screen and (min-width: 1366px) {
+  
+@media screen and (min-width: 1680px) {
   .container {
     padding-left: 16px;
     padding-right: 16px;
   }
+
 
   .footer-nav__contacts {
     margin-right: auto;
@@ -1123,4 +1136,247 @@ button {
     margin-left: 16px;
     margin-right: 24px;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+
+.program {
+  background-color: var(--secondary-bg-color);
+  padding-top: 40px;
+  background-image: url(../images/program/program-mob.png);
+  background-repeat: no-repeat;
+  background-position: 330px 1073px;
+  padding-bottom: 604px;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .program .program {
+    background-image: url(../images/program/program-mob@2x.png);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .program {
+    background-image: url(../images/program/program-tab.png);
+    background-position: 0;
+    padding: 60px 75px 0 103px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .program .program {
+    background-image: url(../images/program/program-tab@2x.png);
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .program {
+    padding-top: 80px;
+  }
+}
+
+.program-container {
+  padding-left: 62px;
+  padding-right: 56px;
+}
+
+@media screen and (min-width: 768px) {
+  .program-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.section-title {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.304;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--primary-bg-color);
+}
+
+@media screen and (min-width: 768px) {
+  .section-title {
+    font-size: 26px;
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .section-title {
+    font-size: 46px;
+  }
+}
+
+.semester-list {
+  margin-top: 40px;
+  padding-left: 26px;
+  border-left: 1px solid var(--secondary-title-color);
+}
+
+@media screen and (min-width: 768px) {
+  .semester-list {
+    padding-left: 113px;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .semester-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 80px;
+  }
+}
+
+.semester-list__item:not(:first-child) {
+  margin-top: 40px;
+}
+
+.semester-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--primary-bg-color);
+}
+
+@media screen and (min-width: 1680px) {
+  .semester-title {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .semester-number {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .subject-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.subject-list__item {
+  margin-top: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .subject-list__item:not(:last-child) {
+    margin-right: 100px;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .subject-list__item {
+    margin-top: 24px;
+  }
+}
+
+.subject-title {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.65;
+  letter-spacing: 0.08em;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  color: var(--accent-color);
+}
+
+@media screen and (min-width: 1680px) {
+  .subject-title {
+    font-size: 20px;
+  }
+}
+
+.topic-list__item {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.08em;
+  opacity: 0.5;
+  color: var(--primary-text-color);
+}
+
+@media screen and (min-width: 1680px) {
+  .topic-list__item {
+    font-size: 18px;
+  }
+}
+
+.reveiwes {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.reveiwes .section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.reveiwes__block {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.reveiwes__name {
+  margin-bottom: 10px;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+  color: var(--accent-color);
+}
+
+.reveiwes__course {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: 0.08em;
+  color: var(--primary-text-color);
+}
+
+.reveiwes__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.67;
+  color: var(--secondary-text-color);
+}
+
+.reveiwes__more {
+  text-decoration: underline;
+  color: var(--accent-color);
+}
+
+.reveiwes__social {
+  display: block;
+  width: 30px;
+  height: 17px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  fill: #436EAB;
+}
+
+.reveiwes__icon {
+  display: block;
+  width: 25px;
+  height: 15px;
+}
+
+.reveiwes__avatar {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  background-color: teal;
+}
+/*# sourceMappingURL=main.css.map */
