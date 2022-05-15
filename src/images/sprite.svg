@@ -15,12 +15,13 @@
 
 
       <!--  Header -->
-
       <symbol id="icon-burger" viewBox="0 0 48 32">
-         <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="4.5714" d="M0 2.286h48"></path>
-         <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="4.5714" d="M0 16h48"></path>
-         <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="4.5714" d="M0 29.714h48"></path>
-      </symbol>
+<path d="M46.857 4.571h-46.857v-4.571h46.857v4.571z"></path>
+<path d="M46.857 18.286h-46.857v-4.571h46.857v4.571z"></path>
+<path d="M46.857 32h-46.857v-4.571h46.857v4.571z"></path>
+</symbol>
+
+      
 
       <symbol id="icon-close-btn" viewBox="0 0 32 32">
          <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3.5556" d="M1.778 30.222l28.444-28.444"></path>

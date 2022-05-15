@@ -1,0 +1,66 @@
+.logo {
+  transition: transform 250ms linear;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
+}
+
+.logo__link {
+  display: inline-table;
+}
+
+.logo__text {
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: var(--secondary-bg-color);
+}
+
+.logo__icon {
+  fill: var(--accent-color);
+}
+
+.logo__accent {
+  color: var(--accent-color);
+}
+
+.logo__subtitle {
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: var(--secondary-bg-color);
+}
+
+.logo-upper {
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 767px) {
+  .logo__text {
+    font-size: 18px;
+  }
+
+  .logo__icon {
+    width: 14px;
+    height: 19px;
+  }
+
+  .logo__subtitle {
+    font-size: 5px;
+    line-height: 1.2;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo__text {
+    font-size: 26px;
+    line-height: 1.23;
+  }
+
+  .logo__subtitle {
+    font-size: 8px;
+    line-height: 0.8;
+  }
+}
