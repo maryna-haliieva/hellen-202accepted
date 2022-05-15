@@ -76,6 +76,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .guarantee__container {
+    width: 728px;
+  }
+
   .guarantee__container-list {
     width: 599px;
   }
@@ -91,6 +95,10 @@
 }
 
 @media screen and (min-width: 1680px) {
+  .guarantee__container {
+    min-width: 1648px;
+  }
+
   .guarantee__container-list {
     width: 1090px;
   }
