@@ -1,3 +1,16 @@
+.hero {
+    background-image: url(../images/hero/hero-bg-mob.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10%) calc(100% - 13%);
+}
+
+.hero__container {
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
 .hero__title {
     font-size: 20px;
     max-width: 280px;
@@ -8,25 +21,28 @@
     color: var(--primary-title-color);
 }
 
-// .hero__container {
-//     display: block;
-// }
-
 .hero__description {
     display: block;
 }
 
-.hero {
-
-    background-image:
-        url(../images/hero/hero-bg-mob.png);
-
-    background-repeat: no-repeat;
-    box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
-
+.hero__points-title {
+    display: block;
+    color: var(--accent-color);
 }
 
-@media screen and (max-width:1366px) {
+@media screen and (min-width:480px) {
+
+    .hero {
+        background-image:
+            url(../images/hero/hero-bg-mob.png);
+        background-repeat: no-repeat;
+        background-position: calc(100% - 10%) calc(100% - 13%);
+    }
+
+    .hero__guaranteed-title {
+        display: block;
+        color: var(--primary-title-color);
+    }
 
     .hero__points-title {
         display: block;
@@ -35,25 +51,56 @@
 }
 
 @media screen and (min-width:768px) {
+    .hero {
+        background-image:
+            url(../images/hero/hero-bg-tab.png);
+        background-repeat: no-repeat;
+        background-position: calc(100% - 10%) calc(100% - 13%);
+    }
+
     .hero__title {
         font-size: 26px;
         max-width: 332px;
     }
 
-    .hero {
-        background-image:
-            url(../images/hero/hero-bg-desk.png);
+    .hero__points-title {
+        display: block;
+        color: var(--accent-color);
     }
 }
 
-@media screen and (min-width:1366px) {
+
+@media screen and (min-width:1680px) {
+
+    .hero {
+        background-image: url(../images/hero/hero-bg-desk.png);
+        background-repeat: no-repeat;
+        background-position: calc(100% - 10%) calc(100% - 13%);
+    }
+
     .hero__title {
         font-size: 58px;
         max-width: 560px;
     }
+}
 
-    .hero {
-        background-image:
-            url(../images/hero/hero-bg-desk.png);
-    }
+.hero__button {
+    display: block;
+    width: 280px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    margin: 40px auto;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1, 2;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--secondary-title-color);
+    background-color: var(--accent-color);
+    border: none;
+}
+
+.hero__img {
+    display: block;
+    margin: auto;
 }

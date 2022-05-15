@@ -1,0 +1,58 @@
+<!-- Modal window -->
+<div class="modal__section is-hidden" data-modal>
+    <div class="modal__container">
+        <button type="button" class="modal__close-btn" data-modal-close>
+            <svg class="modal__close-btn-icon" width="18" height="18">
+                <use href="./images/sprite.svg#icon-modal-close"></use>
+            </svg>
+        </button>
+
+        <form>
+            <strong class="contact-form__h">Contact us</strong>
+
+            <label class="contact-form-field">
+                <span class="contact-form-field__name">Name</span>
+                <span class="contact-form-input__wrapper">
+                    <input name="user_name" class="contact-form-input" type="text" pattern="[A-Za-zА-Яа-я\s]{2,}"
+                        required>
+                    <svg class="modal-icons" width="18" height="18">
+                        <use href="./images/sprite.svg#icon-person"></use>
+                    </svg>
+                </span>
+            </label>
+            <label class="contact-form-field">
+                <span class="contact-form-field__name">Phone</span>
+                <span class="contact-form-input__wrapper">
+                    <input name="user_tel" class="contact-form-input" type="tel"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+                    <svg class="modal-icons" width="18" height="18">
+                        <use href="./images/sprite.svg#icon-modal-phone"></use>
+                    </svg>
+                </span>
+            </label>
+            <label class="contact-form-field">
+                <span class="contact-form-field__name">E-mail</span>
+                <span class="contact-form-input__wrapper">
+                    <input name="user_email" class="contact-form-input" required type="email">
+                    <svg class="modal-icons" width="18" height="18">
+                        <use href="./images/sprite.svg#icon-email"></use>
+                    </svg>
+                </span>
+            </label>
+            <label>
+                <span class="contact-form-field__name">Comment</span>
+                <textarea name="user_message" class="contact-form-message contact-form-message__textarea"
+                    placeholder="Text"></textarea>
+            </label>
+            <div class="checkbox__wrapper">
+                <input class="checkbox__contact-form visually-hidden" type="checkbox" name="accept-policy"
+                    id="policy-checkbox" required>
+                <label for="policy-checkbox" class="checkbox__contact-form-label">
+                    Accept &nbsp;<a href="" class="policy-checkbox__link"> licence</a>
+                </label>
+            </div>
+
+            <button type="submit" class="btn submit-btn">Send</button>
+        </form>
+    </div>
+</div>
