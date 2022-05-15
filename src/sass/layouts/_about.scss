@@ -6,8 +6,16 @@
   margin-bottom: 20px;
 }
 
-.picture__wrapper {
-  margin-bottom: 20px;
+.about__picture {
+  display: block;
+
+  @media screen and (max-width:767px) {
+    margin-bottom: 20px;
+  }
+}
+
+.about-block {
+  width: 280px;
 }
 
 .about-block-title {
@@ -22,32 +30,33 @@
 }
 
 .about-block-list {
-    margin-bottom: 36px;
+  margin-bottom: 36px;
   }
 
-.about-block-list__item::before {
-  content: "";
-  display: block;
-  margin-bottom: 40px;
-  margin-right: 8px;
-  width: 17.08px;
-  height: 14px;
-  background-image: url("/images/sprite.svg#icon-check");
-  // background-size: contain;
-  background-color: var(--accent-color);
+.about-block-list__item {
+  position: relative;
 }
 
-// .about-block-list__item.first-item::before {
-//   margin-bottom: 40px;
-// }
+.about-block-list__item:not(:last-child) {
+  margin-bottom: 30px;
+}
 
-// .about-block-list__item.second-item::before {
-//   margin-bottom: 56px;
-// }
 
-.about-block-list__item {
+.about-block-list__item-text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 17.08px;
+  height: 14px;
+  background-image: url("../images/about/tab-mob-check-icon.svg");
+}
+
+.about-block-list__item-text {
   display: flex;
   align-items: baseline;
+  margin-left: 26px;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
@@ -69,6 +78,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.67;
+  letter-spacing: 0.03em;
 }
 
 .about-block__link {
@@ -80,22 +90,30 @@
     color: var(--accent-color);
 }
 
+@media screen and (min-width:768px) and (max-width:1679px) {
+  .about__wrapper {
+    justify-content: space-between;
+  }
+}
+
 @media screen and (min-width:768px) {
   .about__wrapper {
     display: flex;
-    justify-content: space-between;
-  }
-
-  .picture__wrapper {
-    margin-right: 60px;
-    align-self: flex-start;
   }
 
   .section__title {
     margin-bottom: 40px;
   }
 
-  .about-block-list__item {
+  .about-block {
+    width: 402px;
+  }
+
+  .about-block-list {
+    margin-bottom: 50px;
+  }
+
+  .about-block-list__item-text {
     font-size: 12px;
     line-height: 1.25;
   }
@@ -108,18 +126,16 @@
 }
 
 @media screen and (min-width:1680px) {
-  .container.desktop-container {
-    margin-left: 0;
-    margin-right: auto;
-    padding-right: 0;
-    width: 1383px;
-  }
 
   .section__title {
     margin-bottom: 80px;
   }
 
-  .picture__wrapper {
+  .about-block {
+    width: 668px;
+  }
+
+  .about__picture {
     margin-right: 172px;
   }
 
@@ -131,22 +147,33 @@
   }
 
   .about-block-list {
-    max-width: 530px;
-    margin-bottom: 30px;
-  }
-
-  .about-block-list__item {
-    font-size: 16px;
+    margin-bottom: 56px;
   }
 
   .about-block__description {
-    margin-bottom: 20px;
+    margin-bottom: 48px;
     font-size: 18px;
     line-height: 1.56;
+  }
+
+  .about-block__description-desktop {
+    display: block;
+    margin-bottom: 16px;
   }
 
   .about-block__link {
     font-size: 18px;
     line-height: 1.56;
+  }
+
+  .about-block-list__item-text {
+    margin-left: 58px;
+    font-size: 16px;
+  }
+
+  .about-block-list__item-text::before {
+    width: 24.41px;
+    height: 20px;
+    background-image: url("../images/about/desktop-check-icon.svg");
   }
 }
