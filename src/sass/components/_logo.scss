@@ -1,8 +1,10 @@
 .logo {
-    transition: transform .25s linear;
+  transition: transform .25s linear;
 }
-.logo:focus, .logo:hover {
-    transform: scale(1.2);
+
+.logo:focus,
+.logo:hover {
+  transform: scale(1.2);
 }
 
 
@@ -11,25 +13,27 @@
 }
 
 .logo__link {
-    display: inline-block;
-    cursor: pointer;
-    text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
 }
+
 .footer__logo {
-    text-decoration: none;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 26px;
-    line-height: 1.23;
-    letter-spacing: 0.04em;
-    color: #111518;
+  text-decoration: none;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 1.23;
+  letter-spacing: 0.04em;
+  color: #111518;
 }
+
 .logo__text {
-    font-style: normal;
-    font-weight: 800;
-    letter-spacing: .04em;
-    color: var(--secondary-bg-color);
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: .04em;
+  color: var(--secondary-bg-color);
 }
 
 
@@ -39,16 +43,18 @@
 
 
 .logo__icon {
-    fill: var(--accent-color);
+  fill: var(--accent-color);
 }
+
 .logo-upper {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
+
 .logo__subtitle {
-    font-style: normal;
-    font-weight: 700;
-    letter-spacing: .18em;
-    color: var(--secondary-bg-color);
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: .18em;
+  color: var(--secondary-bg-color);
 }
 
 
@@ -58,10 +64,11 @@
 
 
 .logo-upper {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
+
 .logo__accent {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 
@@ -91,29 +98,33 @@
     font-size: 5px;
     line-height: 1.2;
   }
-/* 0px - 768px  */
-@media screen and (max-width: 767px) {
+
+  /* 0px - 768px  */
+  @media screen and (max-width: 767px) {
     .logo__footer {
-        margin-bottom: 21px;
+      margin-bottom: 21px;
     }
+
     .logo__text {
-        font-size: 18px;
-    }
-    .logo__subtitle {
-        font-size: 5px;
-        line-height: 1.2;
+      font-size: 18px;
     }
 
-}
-@media screen and (min-width: 768px) {
+    .logo__subtitle {
+      font-size: 5px;
+      line-height: 1.2;
+    }
+
+  }
+
+  @media screen and (min-width: 768px) {
     .logo__text {
-        font-size: 26px;
-        line-height: 1.23;
+      font-size: 26px;
+      line-height: 1.23;
     }
+
     .logo__subtitle {
-        font-size: 8px;
-        line-height: .8;
+      font-size: 8px;
+      line-height: .8;
     }
+  }
 }
-
-
