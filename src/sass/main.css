@@ -317,6 +317,95 @@ button {
     font-size: 12px;
   }
 }
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 1679px) {
+  .header__nav-list {
+    display: none;
+  }
+
+  .header__burger-btn {
+    margin-left: 40px;
+    padding: 0;
+    border: none;
+    line-height: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header__container {
+    padding-top: 20px;
+  }
+
+  .header__button {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__container {
+    padding-top: 40px;
+  }
+
+  .header__button {
+    min-width: 260px;
+    min-height: 48px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.14em;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    background-color: transparent;
+    border: 2px solid var(--accent-color);
+    transition: 250ms linear;
+  }
+  .header__button:hover, .header__button:focus {
+    color: var(--primary-bg-color);
+    background-color: var(--accent-color);
+  }
+}
+@media screen and (min-width: 1680px) {
+  .header__navigation {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .header__nav-list {
+    display: flex;
+    align-items: center;
+  }
+
+  .header__nav-item {
+    margin-right: 40px;
+  }
+
+  .header__nav-item {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.21;
+    text-transform: uppercase;
+    transition: all 250ms linear;
+  }
+  .header__nav-item:hover, .header__nav-item:focus {
+    color: var(--accent-color);
+    transform: scale(1.2);
+  }
+
+  .header__button {
+    min-width: 336px;
+    min-height: 70px;
+  }
+
+  .header__burger-btn {
+    display: none;
+  }
+}
 .hero {
   background-image: url(../images/hero/hero-bg-mob.png);
   background-size: cover;
@@ -2021,7 +2110,7 @@ button {
   }
 }
 @media screen and (max-width: 767px) {
-  .container {
+  .contacts__container {
     margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
@@ -2190,7 +2279,12 @@ button {
   height: 29px;
   margin-right: 16px;
   fill: var(--accent-color);
-  transition: currentColor var(--duration) cubic-bezier(0.4, 0, 0.2, 1), transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: currentColor var(--duration) cubic-bezier(0.4, 0, 0.2, 1), transform var(--duration) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.Footer-mobile__icon-phone {
+  cursor: pointer;
+  transition: currentColor var(--duration) cubic-bezier(0.4, 0, 0.2, 1), transform var(--duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-mobile__icon:hover {
@@ -2199,7 +2293,7 @@ button {
 }
 
 .footer-social__icon {
-  fill: var(--accent-color);
+  fill: var(--primary-bg-color);
 }
 
 .footer-social__link {

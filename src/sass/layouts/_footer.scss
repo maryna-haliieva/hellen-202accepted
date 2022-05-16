@@ -46,37 +46,6 @@
     line-height: 2;
     color: var(--primary-text-color);
 }
-<<<<<<< Updated upstream
-// .logo__icon {
-//     fill: #ff6b09;
-// }
-// .footer__logo {
-//     text-decoration: none;
-//     font-family: 'Montserrat';
-//     font-style: normal;
-//     font-weight: 800;
-//     font-size: 26px;
-//     line-height: 1.23;
-//     letter-spacing: 0.04em;
-//     color: var(--secondary-bg-color);
-// }
-
-// .logo__subtitle {
-//     font-family: 'Montserrat';
-//     font-style: normal;
-//     font-weight: 700;
-//     font-size: 8px;
-//     line-height: 1.25;
-//     letter-spacing: 0.18em;
-//     text-transform: uppercase;
-//     color: var(--secondary-bg-color);
-// }
-
-// .logo__sibtitle-slogan {
-//     color: var(--accent-color);
-// }
-=======
->>>>>>> Stashed changes
 
 .footer-nav__contacts {
     display: flex;
@@ -90,15 +59,12 @@
     height: 29px;
     margin-right: 16px;
     fill: var(--accent-color);
-<<<<<<< Updated upstream
     transition: currentColor var(--duration) cubic-bezier(0.4, 0, 0.2, 1), transform var(--duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .Footer-mobile__icon-phone {
     cursor: pointer;
-=======
-    transition: currentColor var(--duration) cubic-bezier(0.4, 0, 0.2, 1), transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
->>>>>>> Stashed changes
+    transition: currentColor var(--duration) cubic-bezier(0.4, 0, 0.2, 1), transform var(--duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-mobile__icon:hover {
