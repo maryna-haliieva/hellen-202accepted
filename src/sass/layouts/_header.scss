@@ -17,9 +17,13 @@
     background-color: transparent;
   }
 
-  .header__burger-icon:hover,
-  .header__burger-icon:focus {
-    fill: var(--accent-color);
+  .header__burger-icon {
+    transition: 250ms linear;
+
+    &:hover,
+    &:focus {
+      fill: var(--accent-color);
+    }
   }
 }
 
@@ -90,6 +94,10 @@
       transform: scale(1.2);
     }
   }
+
+  // .header__link: {
+  //   transition: 1250ms liner;
+  // }
 
   .header__button {
     min-width: 336px;
