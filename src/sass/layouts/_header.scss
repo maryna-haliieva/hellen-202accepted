@@ -16,6 +16,11 @@
     line-height: 0;
     background-color: transparent;
   }
+
+  .header__burger-icon:hover,
+  .header__burger-icon:focus {
+    fill: var(--accent-color);
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -95,6 +100,3 @@
     display: none;
   }
 }
-
-
-
