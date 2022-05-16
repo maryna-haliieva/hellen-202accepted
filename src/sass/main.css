@@ -558,12 +558,12 @@ button {
 .hero__container {
   margin: auto;
   padding-top: 40px;
+  padding-bottom: 60px;
 }
 
 .container__text {
   width: 280px;
   display: block;
-  margin: 0 auto;
 }
 
 .hero__title {
@@ -611,6 +611,11 @@ button {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 768px) {
+  .container__text {
+    margin: 0 auto;
+  }
+}
 @media screen and (min-width: 480px) {
   .hero {
     background-image: url(../images/hero/hero-bg-mob.png);
@@ -622,7 +627,7 @@ button {
   .hero {
     background-image: url(../images/hero/hero-bg-tab.png);
     background-repeat: no-repeat;
-    background-position: 90% 87%;
+    background-position: 90% 92%;
   }
 
   .hero__container {
@@ -633,7 +638,6 @@ button {
 
   .container__text {
     max-width: 318px;
-    margin-left: 42px;
   }
 
   .hero__title {
@@ -659,14 +663,12 @@ button {
   .hero {
     background-image: url(../images/hero/hero-bg-desk.png);
     background-repeat: no-repeat;
-    background-position: 90% 87%;
+    background-position: 90% 94%;
   }
 
   .container__text {
     max-width: 560px;
     width: 560px;
-    margin-left: 16px;
-    margin-right: 58px;
   }
 
   .hero__title {
@@ -962,24 +964,14 @@ button {
   }
 
   .problems {
-    position: relative;
     padding-top: 80px;
   }
 
-  .problems::before {
-    content: "";
-    position: absolute;
-    display: inline-block;
-    width: 446px;
-    height: 621px;
-    margin-top: 8px;
+  .problems__container {
+    width: 1680px;
     background-image: url(../images/icon-fire-probl.svg);
-    fill: transparent;
     background-repeat: no-repeat;
-    background-position: center;
-  }
-  .problems::before:hover, .problems::before:focus {
-    fill: var(--accent-color);
+    background-position: right;
   }
 
   .second-title__problems {
@@ -1544,14 +1536,13 @@ button {
     line-height: 1.4;
   }
 
-  .benefits__item::before {
-    font-size: 20px;
-    line-height: 1.7;
-  }
-
   .benefits__item {
     width: 356px;
     margin-right: 204px;
+  }
+  .benefits__item::before {
+    font-size: 20px;
+    line-height: 1.7;
   }
   .benefits__item:nth-last-child(-n+3) {
     margin-bottom: 0;
