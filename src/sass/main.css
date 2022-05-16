@@ -2178,36 +2178,6 @@ button {
   color: var(--primary-text-color);
 }
 
-.logo__icon {
-  fill: #ff6b09;
-}
-
-.footer__logo {
-  text-decoration: none;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 26px;
-  line-height: 1.23;
-  letter-spacing: 0.04em;
-  color: var(--secondary-bg-color);
-}
-
-.logo__subtitle {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 8px;
-  line-height: 1.25;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--secondary-bg-color);
-}
-
-.logo__sibtitle-slogan {
-  color: var(--accent-color);
-}
-
 .footer-nav__contacts {
   display: flex;
   align-items: center;
@@ -2220,11 +2190,12 @@ button {
   height: 29px;
   margin-right: 16px;
   fill: var(--accent-color);
-  transition: currentColor var(--duration) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: currentColor var(--duration) cubic-bezier(0.4, 0, 0.2, 1), transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-mobile__icon:hover {
   fill: var(--secondary-bg-color);
+  transform: rotate(360deg);
 }
 
 .footer-social__icon {
@@ -2246,6 +2217,11 @@ button {
   cursor: pointer;
   border-radius: 12px;
   background: radial-gradient(110.28% 110.28% at 20.5% 87.39%, #FAE100 0%, #FADC04 5.44%, #FBCE0E 11.67%, #FCB720 18.29%, #FE9838 25.14%, #FF7950 30.54%, #FF1C74 49.22%, #6C1CD1 100%);
+  transition: transform 0.25s linear;
+}
+
+.footer-wrapper__social-link:hover {
+  transform: scale(1.2);
 }
 
 /* 0px - 768px  */
