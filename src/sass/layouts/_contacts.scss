@@ -118,6 +118,12 @@
     color: var(--footersecond-bg-color);
 }
 
+.contacts__input:invalid {
+    border-color: #DD2C00;
+}
+.contacts__tel:invalid {
+    border-color: #DD2C00;
+}
 /* 0px - 768px  */
 @media screen and (max-width: 767px) {
     .section-contacts {
@@ -160,7 +166,7 @@
         min-height: 48px;
     }
 
-    .container {
+    .contacts__container {
         margin: 0 auto;
         padding-left: 20px;
         padding-right: 20px;
