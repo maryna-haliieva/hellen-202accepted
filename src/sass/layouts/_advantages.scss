@@ -39,25 +39,25 @@
 }
 
 .advantages__item_guarantee::before {
-   content: '';
-   display: inline-block;
-   width: 59px;
-   height: 60px;
-   background-image: url(../images/guarantee.svg);
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: contain;
+    content: '';
+    display: inline-block;
+    width: 59px;
+    height: 60px;
+    background-image: url(../images/guarantee.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 .advantages__item_methods::before {
-   content: '';
-   display: inline-block;
-   width: 59px;
-   height: 60px;
-   background-image: url(../images/methods.svg);
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: contain;
+    content: '';
+    display: inline-block;
+    width: 59px;
+    height: 60px;
+    background-image: url(../images/methods.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 .advantages__item_last {
@@ -65,30 +65,30 @@
 }
 
 @media screen and (min-width: 768px) {
-        .container {
-            width: 768px;
-        }
+    .container {
+        width: 768px;
+    }
 
-        .advantages__list {
-            justify-content: space-between;
-            flex-wrap: nowrap;
-            margin-top: 44px;
-        }
+    .advantages__list {
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        margin-top: 44px;
+    }
 
-        .advantages__item {
-            width: 448px;
-            margin-bottom: 0;  
-        }
+    .advantages__item {
+        width: 448px;
+        margin-bottom: 0;
+    }
 
-        .advantages__priority {
-            padding-right: 45px;
-            margin-left: 12px;
-        }
+    .advantages__priority {
+        padding-right: 45px;
+        margin-left: 12px;
+    }
 
 
-        .advantages__priority_methods {
-            padding-right: 70px;
-        }
+    .advantages__priority_methods {
+        padding-right: 70px;
+    }
 }
 
 @media screen and (min-width: 1680px) {
@@ -110,7 +110,7 @@
     }
 
     .advantages__item {
-        width: 448px;  
+        width: 448px;
     }
 
     .advantages__priority_autors {
@@ -131,17 +131,17 @@
         height: 102px;
         background-image: url(../images/autors-desktop.svg);
     }
-    
+
     .advantages__item_guarantee::before {
         width: 100px;
         height: 102px;
         background-image: url(../images/guarantee-desktop.svg);
     }
-    
+
     .advantages__item_methods::before {
         width: 100px;
         height: 102px;
         background-image: url(../images/methods-desktop.svg);
     }
-    
+
 }
