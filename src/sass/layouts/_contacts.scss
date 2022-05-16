@@ -9,14 +9,14 @@
 
 .section-contacts {
     background-color: var(--secondary-bg-color);
-    background-image: url(../images/contacts/contacts-bg-mob.jpg);
+    background-image: url(../images/contacts/contacts-bg-mob.png);
 }
 
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .section-contacts {
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/contacts/contacts-bg-mob@2x.jpg');
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/contacts/contacts-bg-mob@2x.png');
     }
 }
 
@@ -122,14 +122,14 @@
 @media screen and (max-width: 767px) {
     .section-contacts {
         background-color: var(--footersecond-bg-color);
-        background-image: url(../images/contacts/contacts-bg-mob.jpg);
+        background-image: url(../images/contacts/contacts-bg-mob.png);
     }
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .section-contacts {
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/contacts/contacts-bg-mob@2x.jpg');
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/contacts/contacts-bg-mob@2x.png');
         }
     }
 
@@ -177,14 +177,14 @@
 @media screen and (min-width: 768px) {
     .section-contacts {
         background-color: var(--footersecond-bg-color);
-        background-image: url(../images/contacts/contacts-bg-tab.jpg);
+        background-image: url(../images/contacts/contacts-bg-tab.png);
     }
 
     @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
     screen and (min-width: 768px) and (min-resolution: 192dpi),
     screen and (min-width: 768px) and (min-resolution: 2dppx) {
         .section-contacts {
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/contacts/contacts-bg-tab@2x.jpg');
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/contacts/contacts-bg-tab@2x.png');
         }
     }
 
@@ -232,14 +232,14 @@
 
     .section-contacts {
         background-color: var(--footersecond-bg-color);
-        background-image: url(../images/contacts/contacts-bg-desk.jpg);
+        background-image: url(../images/contacts/contacts-bg-desk.png);
     }
 
     @media screen and (min-width: 1680px) and (min-device-pixel-ratio: 2),
     screen and (min-width: 1680px) and (min-resolution: 192dpi),
     screen and (min-width: 1680px) and (min-resolution: 2dppx) {
         .section-contacts {
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/contacts/contacts-bg-desk@2x.jpg');
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/contacts/contacts-bg-desk@2x.png');
         }
     }
 
