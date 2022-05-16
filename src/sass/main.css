@@ -306,7 +306,14 @@ button {
     width: 290px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1680px) {
+  .modal__container {
+    width: 528px;
+    height: 580px;
+    padding: 40px;
+  }
+
+@media screen and (min-width: 1680px) {
   .modal__container {
     width: 528px;
     height: 580px;
