@@ -1,15 +1,14 @@
-$(window).scroll(function () {
-  var height = $(window).scrollTop();
-  if (height > 100) {
-    $('.top-arrow').fadeIn();
-  } else {
-    $('.top-arrow').fadeOut();
-  }
-});
-$(document).ready(function () {
-  $('.top-arrow').click(function (event) {
-    event.preventDefault();
-    $('html, body').animate({ scrollTop: 0 }, 'slow');
-    return false;
-  });
-});
+
+const scrollBtn = document.querySelector('.isShowBtn');
+
+window.onscroll = () => {
+  if (window.scrollY > 800) {
+    scrollBtn.classList.remove('isShowBtn__hide');
+  } else if (window.scrollY < 800) {
+    scrollBtn.classList.add('isShowBtn__hide');
+  };
+  scrollBtn.onclick = () => {
+    window.scrollTo(0, 0);
+  };
+}
+
