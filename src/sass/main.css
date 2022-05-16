@@ -2065,6 +2065,14 @@ button {
   color: var(--footersecond-bg-color);
 }
 
+.contacts__input:invalid {
+  border-color: #DD2C00;
+}
+
+.contacts__tel:invalid {
+  border-color: #DD2C00;
+}
+
 /* 0px - 768px  */
 @media screen and (max-width: 767px) {
   .section-contacts {
@@ -2110,7 +2118,7 @@ button {
   }
 }
 @media screen and (max-width: 767px) {
-  .container {
+  .contacts__container {
     margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
@@ -2282,8 +2290,10 @@ button {
   transition: currentColor var(--duration) cubic-bezier(0.4, 0, 0.2, 1), transform var(--duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.Footer-mobile__icon-phone {
+.footer-mobile__icon-phone {
   cursor: pointer;
+  transition: currentColor var(--duration) cubic-bezier(0.4, 0, 0.2, 1), transform var(--duration) cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .footer-mobile__icon:hover {
@@ -2313,7 +2323,9 @@ button {
   transition: transform 0.25s linear;
 }
 
+
 .footer-wrapper__social-link:focus, .footer-wrapper__social-link:hover {
+
   transform: scale(1.2);
 }
 
