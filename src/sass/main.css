@@ -99,11 +99,9 @@ button {
   }
 }
 .logo {
-  transition: transform 0.25s linear;
+  transition: transform 250ms linear;
 }
-
-.logo:focus,
-.logo:hover {
+.logo:hover, .logo:focus {
   transform: scale(1.2);
 }
 
@@ -112,20 +110,7 @@ button {
 }
 
 .logo__link {
-  display: inline-block;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.footer__logo {
-  text-decoration: none;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 26px;
-  line-height: 1.23;
-  letter-spacing: 0.04em;
-  color: #111518;
+  display: inline-table;
 }
 
 .logo__text {
@@ -143,8 +128,8 @@ button {
   fill: var(--accent-color);
 }
 
-.logo-upper {
-  text-transform: uppercase;
+.logo__accent {
+  color: var(--accent-color);
 }
 
 .logo__subtitle {
@@ -160,10 +145,6 @@ button {
 
 .logo-upper {
   text-transform: uppercase;
-}
-
-.logo__accent {
-  color: var(--accent-color);
 }
 
 @media screen and (max-width: 1679px) {
@@ -191,24 +172,8 @@ button {
     font-size: 5px;
     line-height: 1.2;
   }
-
-  /* 0px - 768px  */
 }
-@media screen and (max-width: 767px) and (max-width: 767px) {
-  .logo__footer {
-    margin-bottom: 21px;
-  }
-
-  .logo__text {
-    font-size: 18px;
-  }
-
-  .logo__subtitle {
-    font-size: 5px;
-    line-height: 1.2;
-  }
-}
-@media screen and (max-width: 767px) and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .logo__text {
     font-size: 26px;
     line-height: 1.23;
@@ -238,20 +203,22 @@ button {
     height: 100vh;
   }
 
-  .mobile-menu__navigation {
-    margin-top: 40px;
-    margin-bottom: 40px;
+  .mobile-menu__blok-nav {
+    display: flex;
+    justify-content: center;
   }
 
-  .mobile-menu__nav-item {
+  .mobile-menu__link {
     font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.21;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
-    transition: all 250ms linear;
+    color: var(--secondary-title-color);
+    transition: 250ms linear;
   }
-  .mobile-menu__nav-item:hover, .mobile-menu__nav-item:focus {
+  .mobile-menu__link:hover, .mobile-menu__link:focus {
     color: var(--accent-color);
     transform: scale(1.2);
   }
@@ -277,11 +244,28 @@ button {
 @media screen and (max-width: 767px) {
   .mobile-menu__container {
     padding-left: 20px;
+    padding-right: 20px;
     padding-top: 89px;
   }
 
+  .mobile-menu__blok-nav {
+    margin-bottom: 40px;
+    display: block;
+  }
+
+  .mobile-menu__link {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+  }
+
   .mobile-menu__button {
+    display: block;
     min-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
     min-height: 48px;
     font-style: normal;
     font-weight: 700;
@@ -475,6 +459,11 @@ button {
     border: none;
     line-height: 0;
     background-color: transparent;
+  }
+
+  .header__burger-icon:hover,
+.header__burger-icon:focus {
+    fill: var(--accent-color);
   }
 }
 @media screen and (max-width: 767px) {
@@ -962,24 +951,14 @@ button {
   }
 
   .problems {
-    position: relative;
     padding-top: 80px;
   }
 
-  .problems::before {
-    content: "";
-    position: absolute;
-    display: inline-block;
-    width: 446px;
-    height: 621px;
-    margin-top: 8px;
+  .problems__container {
+    width: 1650px;
     background-image: url(../images/icon-fire-probl.svg);
-    fill: transparent;
     background-repeat: no-repeat;
-    background-position: center;
-  }
-  .problems::before:hover, .problems::before:focus {
-    fill: var(--accent-color);
+    background-position: right;
   }
 
   .second-title__problems {
@@ -1203,6 +1182,7 @@ button {
   background-repeat: no-repeat;
   background-position: 100% 97%;
   padding-bottom: 145px;
+  transform: translateY(1px);
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .program .program {
@@ -1544,14 +1524,13 @@ button {
     line-height: 1.4;
   }
 
-  .benefits__item::before {
-    font-size: 20px;
-    line-height: 1.7;
-  }
-
   .benefits__item {
     width: 356px;
     margin-right: 204px;
+  }
+  .benefits__item::before {
+    font-size: 20px;
+    line-height: 1.7;
   }
   .benefits__item:nth-last-child(-n+3) {
     margin-bottom: 0;
@@ -1873,13 +1852,7 @@ button {
 
 .reveiwes .section-title {
   text-align: center;
-  margin-bottom: 40px;
   color: var(--primary-title-color);
-}
-
-.reveiwes__block {
-  padding-top: 20px;
-  padding-bottom: 30px;
 }
 
 .reveiwes__name {
@@ -1941,8 +1914,8 @@ button {
     padding-bottom: 40px;
   }
   .reveiwes__block {
-    padding-bottom: 40px;
-    padding-top: 24px;
+    margin-bottom: 40px;
+    margin-top: 24px;
   }
   .reveiwes__avatar {
     margin-bottom: 24px;
@@ -1999,7 +1972,6 @@ button {
   }
 
   .slick-list {
-    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
     margin-bottom: 30px;
   }
 }
@@ -2079,14 +2051,18 @@ button {
     padding-bottom: 80px;
   }
 
+  .reveiwes-container {
+    padding: 0 238px;
+  }
+
   .reveiwes .section-title {
     font-size: 46px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 
   .reveiwes__block {
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
-    max-width: 1090px;
+    max-width: 1088px;
     margin: 0 auto 40px;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -2110,10 +2086,6 @@ button {
   .reveiwes__text {
     font-size: 18px;
     line-height: 1.56;
-  }
-
-  .slick-arrow {
-    margin: 0 230px;
   }
 
   .slick-dots li:not(:first-child) {
@@ -2165,14 +2137,15 @@ button {
 
 /* Стрелка влево */
 .slick-arrow.slick-prev {
-  margin-right: 100px;
   left: 0;
+  background-repeat: no-repeat;
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='25' height='16' viewBox='0 0 27 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M26 7C26.5523 7 27 7.44772 27 8C27 8.55228 26.5523 9 26 9V7ZM0.292892 8.70711C-0.0976315 8.31658 -0.0976315 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM26 9H1V7H26V9Z' fill='%23FF6B09'/%3e%3c/svg%3e ");
 }
 
 /* Стрелка вправо */
 .slick-arrow.slick-next {
   right: 0;
+  background-repeat: no-repeat;
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='25' height='16' viewBox='0 0 27 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM26.7071 8.70711C27.0976 8.31658 27.0976 7.68342 26.7071 7.29289L20.3431 0.928932C19.9526 0.538408 19.3195 0.538408 18.9289 0.928932C18.5384 1.31946 18.5384 1.95262 18.9289 2.34315L24.5858 8L18.9289 13.6569C18.5384 14.0474 18.5384 14.6805 18.9289 15.0711C19.3195 15.4616 19.9526 15.4616 20.3431 15.0711L26.7071 8.70711ZM1 9H26V7H1V9Z' fill='%23FF6B09'/%3e%3c/svg%3e ");
 }
 
@@ -2193,43 +2166,51 @@ button {
 }
 
 .slick-dots li:nth-child(1) button {
-  background-color: tomato;
+  background-image: url(/images/photo-slider/yulia_54ч54-min.jpg);
 }
 
 .slick-dots li:nth-child(2) button {
-  background-color: tomato;
+  background-image: url(/images/photo-slider/marina_54х54-min.jpg);
 }
 
 .slick-dots li:nth-child(3) button {
-  background-color: tomato;
+  background-image: url(/images/photo-slider/lilia_54х54-min.jpg);
 }
 
 .slick-dots li:nth-child(4) button {
-  background-color: tomato;
+  background-image: url(/images/photo-slider/uliana_54х54-min.jpg);
 }
 
 .slick-dots li:nth-child(5) button {
-  background-color: tomato;
+  background-image: url(/images/photo-slider/olga_54х54-min.jpg);
 }
 
 .slick-dots li:nth-child(6) button {
-  background-color: tomato;
+  background-image: url(/images/photo-slider/vitalii_54x54-min.jpg);
 }
 
 .slick-dots li:nth-child(7) button {
-  background-color: tomato;
+  background-image: url(/images/photo-slider/victor_54x54-min.jpg);
 }
 
 .slick-dots li:nth-child(8) button {
-  background-color: tomato;
+  background-image: url(/images/photo-slider/evgen_54x54-min.jpg);
 }
 
 .slick-dots li:nth-child(9) button {
-  background-color: tomato;
+  background-image: url(/images/photo-slider/ivan_54x54-min.jpg);
+}
+
+.slick-dots li[class=slick-active] button {
+  transform: scale(1.2);
 }
 
 .slick-slide {
   outline: none;
+}
+
+.slick-slide img {
+  border-radius: 50%;
 }
 
 /* contacts section */
