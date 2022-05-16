@@ -13,9 +13,6 @@
   }
 
   .mobile-menu__container {
-    // width: 767px;
-    // margin-left: auto;
-    // margin-right: auto;
     position: relative;
     height: 100vh;
   }
@@ -60,14 +57,15 @@
     background-color: transparent;
   }
 
-  // .mobile-menu__close-icon {
-  //   transition: 250ms linear;
+  .mobile-menu__close-icon {
+    fill: var(--secondary-title-color);
+    transition: 250ms linear;
 
-  //   &:hover,
-  //   &:focus {
-  //     fill: var(--accent-color);
-  //   }
-  // }
+    &:hover,
+    &:focus {
+      fill: var(--accent-color);
+    }
+  }
 }
 
 @media screen and (max-width: 767px) {
