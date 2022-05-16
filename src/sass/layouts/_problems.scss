@@ -1,6 +1,4 @@
 %second-title {
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 800;
     letter-spacing: 0.03em;
     color: var(--primary-bg-color);
@@ -8,16 +6,18 @@
 
 .second-title__problems {
     @extend %second-title;
+    width: 100%;
     font-size: 24px;
     line-height: 1.3;
-    padding-right: 20px;
     margin-bottom: 24px;
 }
 
 .problems {
     padding-top: 24px;
-    margin-bottom: 40px;
-    background-color: var(--footersecond-bg-color);
+    background-image: linear-gradient(
+    to bottom,
+    var(--footersecond-bg-color) 77%,
+    var(--primary-bg-color) 23%);
     
     counter-reset: section;
 }
@@ -34,20 +34,17 @@
     counter-increment: section;
     content: "— 0" counter(section) " ";
     
-    font-family: Montserrat;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 700;
-    line-height: 1.6;
-    letter-spacing: 0.08em;
-    color: #FF6B09;  // accent-color: ?????
+    line-height: 1.2;
+    color: var(--accent-color); 
 }
 
 .problems__accent {
-    color: #FF6B09;
+    color: var(--accent-color);
 }
 
 .problems__list {
-    /* position: absolute; */
     padding-top: 20px;
     padding-left: 32px;
     padding-right: 38px;
@@ -57,19 +54,13 @@
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 }
 
-
 .problems__description {
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.7;
-    margin-bottom: 16px;
     display: flex;
     align-items: center;
-    letter-spacing: 0.08em;
-    color: #111518;
-    margin: 0;
+    color: var(--footersecond-bg-color);
 }
 
 @media screen and (min-width: 423px) and (max-width: 767px) {
@@ -78,27 +69,25 @@
     }
 }
 
+
 @media screen and (min-width: 768px) {
     .problems {
         padding-top: 40px;
-        margin-bottom: 39px;
     }
 
     .second-title__problems {
-        @extend %second-title;
-        padding-right: 284px;
+        padding-right: 280px;
         margin-bottom: 25px;
     }
 
     .problems__list {
         display: flex;
         flex-wrap: wrap;
-        // justify-content: space-between;
-        padding-top: 31px;
-        padding-right: 0;
-        padding-left: 88px;
-        padding-bottom: 33px;
         height: 300px;
+        padding-top: 31px;
+        padding-left: 88px;
+        padding-right: 0;
+        padding-bottom: 33px;
     }
 
     .problems__item,
@@ -106,7 +95,10 @@
         margin-right: 0;
         margin-bottom: 0;
     }
+}
 
+
+@media screen and (min-width: 768px) and (max-width: 1679px) {
     .problems__item_grammar {
         padding-right: 140px;
         margin-right: 40px;
@@ -115,9 +107,7 @@
 
     .problems__item_english {
         width: 267px;
-        // height: 68px;
         padding-right: 60px;
-        margin-right: 73px;
         margin-bottom: 8px;
     }
 
@@ -140,4 +130,77 @@
     .problems__item_last {
         width: 225px;
     }
+}
+
+@media screen and (min-width: 1680px) {
+    .container {
+        width: 1680px;
+    }
+
+    .problems {
+        position: relative;
+        padding-top: 80px;
+    }
+
+    .problems::before {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        width: 446px;
+        height: 621px;
+        margin-top: 8px;
+        background-image: url(../images/icon-fire-probl.svg);
+        fill: transparent;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        &:hover,
+        &:focus {
+            fill: var(--accent-color);
+        }
+    }
+
+    .second-title__problems {
+        width: 866px;
+        font-size: 46px;
+        line-height: 1.3;
+        padding-right: 0;
+        margin-bottom: 80px;
+    }
+
+    .problems__list {
+        justify-content: space-between;
+        height: 353px;
+        padding-top: 60px;
+        padding-left: 140px;
+        padding-right: 192px;
+        padding-bottom: 60px;
+    }
+
+    .problems__item {
+        width: 336px;
+
+        &::before {
+            line-height: 1.7;
+        }
+    }
+
+    .problems__description {
+        font-size: 20px;
+        line-height: 1.6;
+    }
+
+    .problems__item_grammar {
+        margin-bottom: 72px;
+    }
+
+    .problems__item_english {
+        margin-bottom: 40px;
+    }
+
+    .problems__item_vocabulary {
+        margin-bottom: 40px;
+    }
+
+
 }
