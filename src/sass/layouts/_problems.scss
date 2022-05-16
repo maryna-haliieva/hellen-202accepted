@@ -138,26 +138,21 @@
     }
 
     .problems {
-        position: relative;
+
+        // треба ще розібратися бо конфлікт між картинкою і градієнтом
+
         padding-top: 80px;
-    }
 
-    .problems::before {
-        content: '';
-        position: absolute;
-        display: inline-block;
-        width: 446px;
-        height: 621px;
-        margin-top: 8px;
+        background-color: var(--footersecond-bg-color);
+
         background-image: url(../images/icon-fire-probl.svg);
-        fill: transparent;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: right;
 
-        &:hover,
-        &:focus {
-            fill: var(--accent-color);
-        }
+        // background-image:linear-gradient(
+        // to bottom,
+        // var(--footersecond-bg-color) 77%,
+        // var(--primary-bg-color) 23%);
     }
 
     .second-title__problems {
