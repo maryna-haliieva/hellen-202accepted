@@ -21,12 +21,12 @@
 <path d="M46.857 32h-46.857v-4.571h46.857v4.571z"></path>
 </symbol>
 
-      
-
       <symbol id="icon-close-btn" viewBox="0 0 32 32">
-         <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3.5556" d="M1.778 30.222l28.444-28.444"></path>
-         <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3.5556" d="M30.222 30.222l-28.444-28.444"></path>
-      </symbol>
+<path fill="#fff" style="fill: var(--color1, #fff)" d="M31.479 3.035l-28.444 28.444-2.514-2.514 28.444-28.444 2.514 2.514z"></path>
+<path fill="#fff" style="fill: var(--color1, #fff)" d="M0.521 3.035l28.444 28.444 2.514-2.514-28.444-28.444-2.514 2.514z"></path>
+</symbol>
+
+      
 
       <!--  Advantages -->
 
