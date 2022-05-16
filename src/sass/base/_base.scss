@@ -10,7 +10,6 @@ body {
 body.modal-open {
   overflow: hidden;
 }
-
 a {
   text-decoration: none;
   color: inherit;
@@ -42,5 +41,10 @@ img {
 
 a,
 button {
-  cursor: pointer;
+    cursor: pointer;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
