@@ -7,6 +7,10 @@
   }
 }
 
+.logo__mobile-menu {
+  position: absolute;
+}
+
 .logo__link {
   display: inline-table;
 }
@@ -16,6 +20,10 @@
   font-weight: 800;
   letter-spacing: 0.04em;
   color: var(--secondary-bg-color);
+}
+
+.logo__mobile-menu-text {
+  color: var(--secondary-title-color);
 }
 
 .logo__icon {
@@ -33,11 +41,27 @@
   color: var(--secondary-bg-color);
 }
 
+.logo__mobile-menu-subtitle {
+  color: var(--secondary-title-color);
+}
+
 .logo-upper {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 1679px) {
+  .logo__mobile-menu {
+    top: 40px;
+    left: 32px;
+  }
+}
+
 @media screen and (max-width: 767px) {
+  .logo__mobile-menu {
+    top: 20px;
+    left: 20px;
+  }
+
   .logo__text {
     font-size: 18px;
   }
