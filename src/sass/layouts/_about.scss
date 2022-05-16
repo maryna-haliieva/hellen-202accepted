@@ -28,7 +28,7 @@
 
 .about-block-list {
   margin-bottom: 36px;
-  }
+}
 
 .about-block-list__item {
   position: relative;
@@ -79,19 +79,19 @@
 }
 
 .about-block__link {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.67;
-    letter-spacing: 0.03em;
-    text-decoration: underline;
-    color: var(--accent-color);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.67;
+  letter-spacing: 0.03em;
+  text-decoration: underline;
+  color: var(--accent-color);
 }
 
 @media screen and (max-width:767px) {
 
   .about-container {
     width: 280px;
-    }
+  }
 
   .section__title {
     font-size: 20px;
@@ -113,7 +113,7 @@
 }
 
 @media screen and (min-width:768px) {
-    
+
   .about__wrapper {
     display: flex;
   }
@@ -147,7 +147,7 @@
   .section {
     padding-top: 80px;
     padding-bottom: 120px;
-    }
+  }
 
   .about-container {
     width: 1368px;
