@@ -2290,9 +2290,10 @@ button {
   transition: currentColor var(--duration) cubic-bezier(0.4, 0, 0.2, 1), transform var(--duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.Footer-mobile__icon-phone {
+.footer-mobile__icon-phone {
   cursor: pointer;
   transition: currentColor var(--duration) cubic-bezier(0.4, 0, 0.2, 1), transform var(--duration) cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .footer-mobile__icon:hover {
@@ -2322,7 +2323,9 @@ button {
   transition: transform 0.25s linear;
 }
 
-.footer-wrapper__social-link:hover {
+
+.footer-wrapper__social-link:focus, .footer-wrapper__social-link:hover {
+
   transform: scale(1.2);
 }
 

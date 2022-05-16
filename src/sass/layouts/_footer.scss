@@ -95,8 +95,12 @@
 }
 .footer-wrapper__social-link:hover {
     transform: scale(1.2);
+
 }
 
+.footer-wrapper__social-link:focus, .footer-wrapper__social-link:hover {
+    transform: scale(1.2);
+}
 /* 0px - 768px  */
 @media screen and (max-width: 767px) {
     .footer__section {
