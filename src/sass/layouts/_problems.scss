@@ -138,21 +138,14 @@
     }
 
     .problems {
-
-        // треба ще розібратися бо конфлікт між картинкою і градієнтом
-
         padding-top: 80px;
+    }
 
-        background-color: var(--footersecond-bg-color);
-
+    .problems__container {
+        width: 1680px;
         background-image: url(../images/icon-fire-probl.svg);
         background-repeat: no-repeat;
         background-position: right;
-
-        // background-image:linear-gradient(
-        // to bottom,
-        // var(--footersecond-bg-color) 77%,
-        // var(--primary-bg-color) 23%);
     }
 
     .second-title__problems {
