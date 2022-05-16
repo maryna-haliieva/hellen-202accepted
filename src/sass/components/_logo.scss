@@ -1,53 +1,69 @@
 .logo {
-  transition: transform 250ms linear;
-
-  &:hover,
-  &:focus {
-    transform: scale(1.2);
-  }
+    transition: transform .25s linear;
 }
+.logo:focus, .logo:hover {
+    transform: scale(1.2);
+}
+
 
 .logo__mobile-menu {
   position: absolute;
 }
 
 .logo__link {
-  display: inline-table;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+}
+.footer__logo {
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 1.23;
+    letter-spacing: 0.04em;
+    color: #111518;
+}
+.logo__text {
+    font-style: normal;
+    font-weight: 800;
+    letter-spacing: .04em;
+    color: var(--secondary-bg-color);
 }
 
-.logo__text {
-  font-style: normal;
-  font-weight: 800;
-  letter-spacing: 0.04em;
-  color: var(--secondary-bg-color);
-}
 
 .logo__mobile-menu-text {
   color: var(--secondary-title-color);
 }
 
+
 .logo__icon {
-  fill: var(--accent-color);
+    fill: var(--accent-color);
 }
-
-.logo__accent {
-  color: var(--accent-color);
+.logo-upper {
+    text-transform: uppercase;
 }
-
 .logo__subtitle {
-  font-style: normal;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  color: var(--secondary-bg-color);
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: .18em;
+    color: var(--secondary-bg-color);
 }
+
 
 .logo__mobile-menu-subtitle {
   color: var(--secondary-title-color);
 }
 
+
 .logo-upper {
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
+.logo__accent {
+    color: var(--accent-color);
+}
+
 
 @media screen and (max-width: 1679px) {
   .logo__mobile-menu {
@@ -75,16 +91,29 @@
     font-size: 5px;
     line-height: 1.2;
   }
-}
+/* 0px - 768px  */
+@media screen and (max-width: 767px) {
+    .logo__footer {
+        margin-bottom: 21px;
+    }
+    .logo__text {
+        font-size: 18px;
+    }
+    .logo__subtitle {
+        font-size: 5px;
+        line-height: 1.2;
+    }
 
+}
 @media screen and (min-width: 768px) {
-  .logo__text {
-    font-size: 26px;
-    line-height: 1.23;
-  }
-
-  .logo__subtitle {
-    font-size: 8px;
-    line-height: 0.8;
-  }
+    .logo__text {
+        font-size: 26px;
+        line-height: 1.23;
+    }
+    .logo__subtitle {
+        font-size: 8px;
+        line-height: .8;
+    }
 }
+
+
