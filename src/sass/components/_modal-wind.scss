@@ -26,6 +26,27 @@
     background-color: var(--secondary-bg-color);
 }
 
+.modal__close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    padding: 0;
+    border: none;
+    line-height: 0;
+    background-color: transparent;
+}
+
+.modal__close-icon {
+    fill: var(--accent-color);
+    transition: 250ms linear;
+
+    &:hover,
+    &:focus {
+        fill: var(--secondary-title-color);
+    }
+}
+
+
 .contact-form__h {
     display: block;
     margin-bottom: 12px;
@@ -129,5 +150,29 @@
 
     .contact-form-message {
         font-size: 12px;
+    }
+}
+
+.modal__button {
+    display: block;
+    width: 280px;
+    margin: 60px auto;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.14em;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--secondary-title-color);
+    background-color: var(--accent-color);
+    transition: 250ms linear;
+    transition: all 250ms linear;
+
+    &:hover,
+    &:focus {
+        transform: scale(1.2);
     }
 }

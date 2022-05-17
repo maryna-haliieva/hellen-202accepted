@@ -54,6 +54,13 @@
     color: var(--secondary-title-color);
     background-color: var(--accent-color);
     border: none;
+
+    transition: all 250ms linear;
+
+    &:hover,
+    &:focus {
+        transform: scale(1.2);
+    }
 }
 
 .hero__img {
@@ -116,45 +123,63 @@
     .hero__img {
         width: 376px;
     }
+}
 
 
-    @media screen and (min-width: 1680px) {
+@media screen and (min-width: 1680px) {
 
-        .hero {
-            background-image: url(../images/hero/hero-bg-desk.png);
-            background-repeat: no-repeat;
-            background-position: calc(100% - 10%) calc(100% - 6%);
-        }
-
-        .container__text {
-            max-width: 560px;
-            width: 560px;
-            // margin-left: 16px;
-            // margin-right: 58px;
-        }
-
-        .hero__title {
-            width: 560px;
-            font-size: 58px;
-        }
-
-        .hero__description {
-            width: 493px;
-            font-size: 20px;
-        }
-
-        .hero__img {
-            width: 842px;
-        }
-
-        .hero__button {
-            width: 354px;
-            padding-top: 26px;
-            padding-bottom: 26px;
-            // margin-bottom: 264px;
-
-            font-size: 14px;
-        }
+    .hero {
+        background-image: url(../images/hero/hero-bg-desk.png);
+        background-repeat: no-repeat;
+        background-position: calc(100% - 10%) calc(100% - 6%);
     }
 
+    .container__text {
+        max-width: 560px;
+        width: 560px;
+        // margin-left: 16px;
+        // margin-right: 58px;
+    }
+
+    .hero__title {
+        width: 560px;
+        font-size: 58px;
+    }
+
+    .hero__description {
+        width: 493px;
+        font-size: 20px;
+    }
+
+    .hero__img {
+        width: 842px;
+    }
+
+    .hero__button {
+        width: 354px;
+        padding-top: 26px;
+        padding-bottom: 26px;
+        // margin-bottom: 264px;
+
+        font-size: 14px;
+    }
+}
+
+.modal__button {
+    display: block;
+    width: 280px;
+    margin: 60px auto;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.14em;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--secondary-title-color);
+    background-color: var(--accent-color);
+
+    transition: 250ms linear;
 }
