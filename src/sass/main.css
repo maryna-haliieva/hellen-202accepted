@@ -45,6 +45,10 @@ body {
   color: var(--primary-text-color);
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -76,6 +80,14 @@ img {
 a,
 button {
   cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -240,12 +252,25 @@ button {
     line-height: 0;
     background-color: transparent;
   }
+
+  .mobile-menu__close-icon {
+    fill: var(--secondary-title-color);
+    transition: 250ms linear;
+  }
+  .mobile-menu__close-icon:hover, .mobile-menu__close-icon:focus {
+    fill: var(--accent-color);
+  }
 }
 @media screen and (max-width: 767px) {
   .mobile-menu__container {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 89px;
+  }
+
+  .mobile-menu__close-btn {
+    top: 19px;
+    right: 20px;
   }
 
   .mobile-menu__blok-nav {
@@ -283,14 +308,12 @@ button {
     color: var(--primary-bg-color);
     background-color: var(--accent-color);
   }
-
-  .mobile-menu__close-btn {
-    top: 19px;
-    right: 20px;
-  }
 }
 @media screen and (min-width: 768px) {
   .mobile-menu__container {
+    width: 808px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 165px;
   }
 
@@ -349,7 +372,7 @@ button {
   transform: translate(-50%, -50%);
   padding: 40px;
   width: 450px;
-  background-color: var(--secondary-text-color);
+  background-color: var(--secondary-bg-color);
 }
 
 .contact-form__h {
@@ -381,15 +404,19 @@ button {
   margin-top: 4px;
 }
 
+.contact-form-message__textarea {
+  font-size: 14px;
+  color: var(--secondary-title-color);
+}
+
 .contact-form-input {
   width: 100%;
   height: 40px;
   padding-left: 42px;
   border: 1px solid #FF6B09;
-  border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--secondary-title-color);
-  background-color: var(--secondary-text-color);
+  background-color: transparent;
 }
 .contact-form-input:hover, .contact-form-input:focus {
   outline: none;
@@ -416,10 +443,9 @@ button {
   margin-top: 4px;
   margin-bottom: 20px;
   border: 1px solid #FF6B09;
-  border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   letter-spacing: 0.01em;
-  background-color: var(--secondary-text-color);
+  background-color: transparent;
 }
 .contact-form-message:hover, .contact-form-message:focus {
   outline: none;
@@ -442,6 +468,58 @@ button {
     font-size: 12px;
   }
 }
+.is-open-modal {
+  overflow: hidden;
+}
+
+.modal {
+  position: fixed;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.7);
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  display: none;
+}
+
+.modal.is-open {
+  display: block;
+}
+
+.dialog {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 434px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  background-image: url("../images/about/cambrige.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+@media screen and (max-width: 767px) {
+  .dialog {
+    max-width: 308px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .dialog {
+    width: 432px;
+    height: 608px;
+  }
+}
+@media screen and (min-width: 1680px) {
+  .dialog {
+    width: 555px;
+    height: 781px;
+  }
+}
 .header__container {
   display: flex;
   justify-content: space-between;
@@ -461,8 +539,10 @@ button {
     background-color: transparent;
   }
 
-  .header__burger-icon:hover,
-.header__burger-icon:focus {
+  .header__burger-icon {
+    transition: 250ms linear;
+  }
+  .header__burger-icon:hover, .header__burger-icon:focus {
     fill: var(--accent-color);
   }
 }
@@ -537,6 +617,51 @@ button {
     display: none;
   }
 }
+.isShowBtn {
+  opacity: 1;
+  transition: 1s;
+}
+.isShowBtn__hide {
+  opacity: 0;
+}
+
+.top-arrow {
+  z-index: 999;
+  position: fixed;
+  fill: var(--accent-color);
+  border: 2px solid rgba(255, 107, 9, 0.4);
+  border-radius: 50%;
+  bottom: 20px;
+}
+@media screen and (max-width: 767px) {
+  .top-arrow {
+    right: calc(50% - 86px - 20%);
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1679px) {
+  .top-arrow {
+    right: calc(50% - 200px - 20%);
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 1680px) {
+  .top-arrow {
+    right: calc(50% - 350px - 20%);
+    width: 80px;
+    height: 80px;
+    font-size: 65px;
+  }
+}
+.top-arrow:hover {
+  background-color: rgb(255, 107, 9);
+  fill: rgb(250, 250, 250);
+}
+
 .hero {
   background-image: url(../images/hero/hero-bg-mob.png);
   background-size: cover;
@@ -683,14 +808,14 @@ button {
 }
 .advantages {
   width: 100%;
+  padding-top: 40px;
   padding-bottom: 45px;
 }
 
 .advantages__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 44px;
+  justify-content: center;
 }
 
 .advantages__item {
@@ -752,10 +877,13 @@ button {
     width: 768px;
   }
 
+  .advantages {
+    padding-top: 44px;
+  }
+
   .advantages__list {
     justify-content: space-between;
     flex-wrap: nowrap;
-    margin-top: 44px;
   }
 
   .advantages__item {
@@ -777,9 +905,12 @@ button {
     width: 1680px;
   }
 
+  .advantages {
+    padding-top: 44px;
+  }
+
   .advantages__list {
     width: 1569px;
-    margin-top: 40px;
   }
 
   .advantages__priority {
@@ -958,10 +1089,9 @@ button {
 
   .problems__container {
     width: 1650px;
-
-    background-image: url(../images/icon-fire-probl.svg);
+    background-image: url(../images/new-fire-icon.svg);
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: bottom 140px right 16px;
   }
 
   .second-title__problems {
@@ -1543,6 +1673,7 @@ button {
   }
 }
 .section {
+  padding-top: 40px;
   padding-bottom: 40px;
 }
 
@@ -1557,10 +1688,6 @@ button {
   .about__picture {
     margin-bottom: 20px;
   }
-}
-
-.about-block {
-  width: 280px;
 }
 
 .about-block-title {
@@ -1634,6 +1761,21 @@ button {
   color: var(--accent-color);
 }
 
+@media screen and (max-width: 767px) {
+  .about-container {
+    width: 280px;
+  }
+
+  .section__title {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1679px) {
+  .about-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1679px) {
   .about__wrapper {
     justify-content: space-between;
@@ -1668,6 +1810,17 @@ button {
   }
 }
 @media screen and (min-width: 1680px) {
+  .section {
+    padding-top: 80px;
+    padding-bottom: 120px;
+  }
+
+  .about-container {
+    width: 1368px;
+    margin-left: 0;
+    padding-right: 0;
+  }
+
   .section__title {
     margin-bottom: 80px;
   }
