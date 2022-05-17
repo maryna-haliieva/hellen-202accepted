@@ -5,7 +5,7 @@
     height: 100vh;
     width: 100vw;
     z-index: 1;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.4);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
         visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -137,6 +137,11 @@
 }
 
 @media screen and (max-width: 479px) {
+
+    .modal__section {
+        display: none;
+    }
+
     .modal__container {
         width: 290px;
     }
@@ -168,6 +173,7 @@
     text-align: center;
     text-transform: uppercase;
     color: #111518;
+
     background-color: var(--accent-color);
     transition: 250ms linear;
     transition: all 250ms linear;
