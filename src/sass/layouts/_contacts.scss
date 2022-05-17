@@ -75,7 +75,7 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 14px;
     line-height: 1.2;
     letter-spacing: 0.08em;
     color: var(--primary-bg-color);
@@ -162,7 +162,7 @@
 
     .contacts__input {
         padding-left: 28px;
-        max-width: 280px;
+        min-width: 280px;
         min-height: 48px;
     }
 
@@ -270,5 +270,8 @@
         font-size: 14px;
         line-height: 1.21;
         letter-spacing: 0.14em;
+    }
+    .contacts__input {
+        font-size: 20px;
     }
 }

@@ -1,11 +1,10 @@
 .program {
+  position: relative;
   background-color: var(--secondary-bg-color);
   padding-top: 40px;
-  background-image: url(../images/program/program-mob.png);
-  background-repeat: no-repeat;
-  background-position: calc(100% - 0%) calc(97% - 0%);
   padding-bottom: 145px;
   transform: translateY(1px);
+
 
   @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -16,9 +15,9 @@
   }
 
   @media screen and (min-width: 768px) {
-    background-image: url(../images/program/program-tab.png);
+
     padding-bottom: 180px;
-    background-position: calc(100% - 0%) calc(92% - 0%);
+
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -26,15 +25,15 @@
       .program {
         background-image: url(../images/program/program-tab@2x.png);
       }
+
     }
 
-    // padding: 60px 75px 0 103px;
     padding-top: 60px;
   }
 
   @media screen and (min-width: 1680px) {
-    background-image: url(../images/program/program-desk.png);
-    background-position: calc(0% - 0%) calc(135% - 0%);
+
+
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -48,13 +47,28 @@
   }
 }
 
+.program::after {
+  position: absolute;
+  content: url(../images/program/program-mob.png);
+  left: 53%;
+  bottom: 2%;
+
+  @media screen and (min-width: 768px) {
+    content: url(../images/program/program-tab.png);
+    left: 53%;
+  bottom: 5%;
+  }
+
+  @media screen and (min-width: 1680px) {
+    content: url(../images/program/program-desk.png);
+    left: 0;
+    bottom: 0;
+  }
+}
+
 .program-container {
   padding-left: 62px;
   padding-right: 56px;
-
-  // background-image: url(../images/program/program-mob.png);
-  // background-repeat: no-repeat;
-  // background-position: 330px 1073px;
 
   @media screen and (min-width: 768px) {
     padding-left: 20px;

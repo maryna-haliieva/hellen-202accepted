@@ -1,0 +1,28 @@
+//.logo{
+//	&.logo__link:hover{
+//	&.animate__tada{
+//	animation-iteration-count: infinite;
+//	}
+//}
+//}
+.logo:hover {
+	.animate__animated.animate__tada {
+		animation-iteration-count: infinite;
+	}
+}
+
+//.animate__tada{
+//	&:hover{
+
+//	}
+//}
+.animate__hinge {
+	animation-direction: reverse;
+}
+
+
+.footer-mobile__link:hover {
+	.animate__animated.animate__tada {
+		animation-iteration-count: infinite;
+	}
+}

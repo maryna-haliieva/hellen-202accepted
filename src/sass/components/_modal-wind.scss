@@ -5,7 +5,7 @@
     height: 100vh;
     width: 100vw;
     z-index: 1;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.4);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
         visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -24,6 +24,7 @@
     padding: 40px;
     width: 450px;
     background-color: var(--secondary-bg-color);
+    
 }
 
 .modal__close-btn {
@@ -166,7 +167,8 @@
     letter-spacing: 0.14em;
     text-align: center;
     text-transform: uppercase;
-    color: var(--secondary-title-color);
+    color: #111518;
+
     background-color: var(--accent-color);
     transition: 250ms linear;
     transition: all 250ms linear;
@@ -174,5 +176,7 @@
     &:hover,
     &:focus {
         transform: scale(1.2);
+        border: none;
+        box-shadow: #fff 0 -1px 4px, #ff0 0 -5px 13px, #ff8000 0 -10px 10px, red 0 -5px 20px, 5px 5px 15px 5px rgb(0 0 0 / 0%);
     }
 }
