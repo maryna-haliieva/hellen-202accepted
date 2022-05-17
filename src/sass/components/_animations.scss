@@ -20,9 +20,10 @@
 	animation-direction: reverse;
 }
 
-
-.footer-mobile__link:hover {
+.footer-mobile__link:hover{
+	color: var(--accent-color);
 	.animate__animated.animate__tada {
-		animation-iteration-count: infinite;
-	}
+			animation-iteration-count: infinite;
+		}
+
 }
