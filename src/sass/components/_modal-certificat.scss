@@ -1,0 +1,53 @@
+.is-open-modal {
+  overflow: hidden;
+}
+
+.modal {
+  position: fixed;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.7);
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  display: none;
+}
+
+.modal.is-open {
+  display: block;
+}
+
+
+.dialog {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 434px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  background-image: url("../images/about/cambrige.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  @media screen and (max-width:767px) {
+    max-width: 308px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .dialog {
+    width: 432px;
+    height: 608px;
+  }
+}
+
+@media screen and (min-width:1680px) {
+  .dialog {
+    width: 555px;
+    height: 781px;
+  }
+}

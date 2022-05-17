@@ -1,13 +1,13 @@
 .advantages {
     width: 100%;
+    padding-top: 40px;
     padding-bottom: 45px;
 }
 
 .advantages__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 44px;
+    justify-content: center;
 }
 
 .advantages__item {
@@ -39,25 +39,25 @@
 }
 
 .advantages__item_guarantee::before {
-   content: '';
-   display: inline-block;
-   width: 59px;
-   height: 60px;
-   background-image: url(../images/guarantee.svg);
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: contain;
+    content: '';
+    display: inline-block;
+    width: 59px;
+    height: 60px;
+    background-image: url(../images/guarantee.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 .advantages__item_methods::before {
-   content: '';
-   display: inline-block;
-   width: 59px;
-   height: 60px;
-   background-image: url(../images/methods.svg);
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: contain;
+    content: '';
+    display: inline-block;
+    width: 59px;
+    height: 60px;
+    background-image: url(../images/methods.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 .advantages__item_last {
@@ -69,10 +69,13 @@
             width: 768px;
         }
 
+        .advantages {
+            padding-top: 44px;
+        }
+
         .advantages__list {
             justify-content: space-between;
             flex-wrap: nowrap;
-            margin-top: 44px;
         }
 
         .advantages__item {
@@ -96,9 +99,12 @@
         width: 1680px;
     }
 
+    .advantages {
+        padding-top: 44px;
+    }
+
     .advantages__list {
         width: 1569px;
-        margin-top: 40px;
     }
 
     .advantages__priority {
@@ -110,7 +116,7 @@
     }
 
     .advantages__item {
-        width: 448px;  
+        width: 448px;
     }
 
     .advantages__priority_autors {
@@ -131,17 +137,17 @@
         height: 102px;
         background-image: url(../images/autors-desktop.svg);
     }
-    
+
     .advantages__item_guarantee::before {
         width: 100px;
         height: 102px;
         background-image: url(../images/guarantee-desktop.svg);
     }
-    
+
     .advantages__item_methods::before {
         width: 100px;
         height: 102px;
         background-image: url(../images/methods-desktop.svg);
     }
-    
+
 }

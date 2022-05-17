@@ -138,26 +138,14 @@
     }
 
     .problems {
-        position: relative;
         padding-top: 80px;
     }
 
-    .problems::before {
-        content: '';
-        position: absolute;
-        display: inline-block;
-        width: 446px;
-        height: 621px;
-        margin-top: 8px;
-        background-image: url(../images/icon-fire-probl.svg);
-        fill: transparent;
+    .problems__container {
+        width: 1650px;
+        background-image: url(../images/new-fire-icon.svg);
         background-repeat: no-repeat;
-        background-position: center;
-
-        &:hover,
-        &:focus {
-            fill: var(--accent-color);
-        }
+        background-position: bottom 140px right 16px;
     }
 
     .second-title__problems {

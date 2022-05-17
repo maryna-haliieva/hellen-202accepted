@@ -21,12 +21,12 @@
 <path d="M46.857 32h-46.857v-4.571h46.857v4.571z"></path>
 </symbol>
 
-      
-
       <symbol id="icon-close-btn" viewBox="0 0 32 32">
-         <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3.5556" d="M1.778 30.222l28.444-28.444"></path>
-         <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3.5556" d="M30.222 30.222l-28.444-28.444"></path>
-      </symbol>
+<path d="M31.479 3.035l-28.444 28.444-2.514-2.514 28.444-28.444 2.514 2.514z"></path>
+<path d="M0.521 3.035l28.444 28.444 2.514-2.514-28.444-28.444-2.514 2.514z"></path>
+</symbol>
+
+      
 
       <!--  Advantages -->
 
@@ -213,6 +213,10 @@
       </symbol>
 
       <symbol id="icon-checkbox" viewBox="0 0 16 15"><path stroke="#fff" stroke-width=".2" d="M3.957 7.752l-.069-.066-.069.065-.888.842-.076.072.076.073 3.496 3.334.069.066.069-.066 7.504-7.158.076-.073-.076-.072-.882-.841-.069-.066-.069.066-6.553 6.246-2.539-2.422z"/></symbol>   
-
+       <!-- Top-icon -->
+      <symbol id="top-arrow" viewBox="0 0 32 32">
+         <path d="M22.85 19.050l-1 1-5.85-5.85-5.85 5.85-1-1 6.85-6.85 6.85 6.85z"></path>
+      </symbol>
    </defs>
 </svg>
+

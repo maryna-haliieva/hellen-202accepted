@@ -1,4 +1,5 @@
 .section {
+  padding-top: 40px;
   padding-bottom: 40px;
 }
 
@@ -14,10 +15,6 @@
   }
 }
 
-.about-block {
-  width: 280px;
-}
-
 .about-block-title {
   width: 100%;
   padding-bottom: 8px;
@@ -31,7 +28,7 @@
 
 .about-block-list {
   margin-bottom: 36px;
-  }
+}
 
 .about-block-list__item {
   position: relative;
@@ -82,12 +79,31 @@
 }
 
 .about-block__link {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.67;
-    letter-spacing: 0.03em;
-    text-decoration: underline;
-    color: var(--accent-color);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.67;
+  letter-spacing: 0.03em;
+  text-decoration: underline;
+  color: var(--accent-color);
+}
+
+@media screen and (max-width:767px) {
+
+  .about-container {
+    width: 280px;
+  }
+
+  .section__title {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width:1679px) {
+
+  .about-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media screen and (min-width:768px) and (max-width:1679px) {
@@ -97,6 +113,7 @@
 }
 
 @media screen and (min-width:768px) {
+
   .about__wrapper {
     display: flex;
   }
@@ -126,6 +143,17 @@
 }
 
 @media screen and (min-width:1680px) {
+
+  .section {
+    padding-top: 80px;
+    padding-bottom: 120px;
+  }
+
+  .about-container {
+    width: 1368px;
+    margin-left: 0;
+    padding-right: 0;
+  }
 
   .section__title {
     margin-bottom: 80px;
