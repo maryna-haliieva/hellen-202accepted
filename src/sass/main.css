@@ -86,10 +86,6 @@ html {
   scroll-behavior: smooth;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 .container {
   margin: 0px auto;
   padding: 0px 15px;
@@ -375,6 +371,24 @@ html {
   background-color: var(--secondary-bg-color);
 }
 
+.modal__close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  padding: 0;
+  border: none;
+  line-height: 0;
+  background-color: transparent;
+}
+
+.modal__close-icon {
+  fill: var(--accent-color);
+  transition: 250ms linear;
+}
+.modal__close-icon:hover, .modal__close-icon:focus {
+  fill: var(--secondary-title-color);
+}
+
 .contact-form__h {
   display: block;
   margin-bottom: 12px;
@@ -468,6 +482,28 @@ html {
     font-size: 12px;
   }
 }
+.modal__button {
+  display: block;
+  width: 280px;
+  margin: 60px auto;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.14em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--secondary-title-color);
+  background-color: var(--accent-color);
+  transition: 250ms linear;
+  transition: all 250ms linear;
+}
+.modal__button:hover, .modal__button:focus {
+  transform: scale(1.2);
+}
+
 .is-open-modal {
   overflow: hidden;
 }
@@ -718,6 +754,10 @@ html {
   color: var(--secondary-title-color);
   background-color: var(--accent-color);
   border: none;
+  transition: all 250ms linear;
+}
+.hero__button:hover, .hero__button:focus {
+  transform: scale(1.2);
 }
 
 .hero__img {
@@ -773,7 +813,7 @@ html {
     width: 376px;
   }
 }
-@media screen and (min-width: 768px) and (min-width: 1680px) {
+@media screen and (min-width: 1680px) {
   .hero {
     background-image: url(../images/hero/hero-bg-desk.png);
     background-repeat: no-repeat;
@@ -806,6 +846,24 @@ html {
     font-size: 14px;
   }
 }
+.modal__button {
+  display: block;
+  width: 280px;
+  margin: 60px auto;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.14em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--secondary-title-color);
+  background-color: var(--accent-color);
+  transition: 250ms linear;
+}
+
 .advantages {
   width: 100%;
   padding-top: 40px;
