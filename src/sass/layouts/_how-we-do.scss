@@ -23,7 +23,6 @@
 
 .card-set__icon {
     fill: var(--accent-color);
-    // transition: fill 250ms linear;
 
     .card-set__link:hover &,
     .card-set__link:focus & {
@@ -33,7 +32,6 @@
 
 .card-set__title {
     color: var(--primary-title-color);
-    // transition: color 250ms linear;
 
     .card-set__link:hover &,
     .card-set__link:focus & {
@@ -43,7 +41,6 @@
     &::after {
         @extend %accent-line;       
         margin: 17px auto 17px auto;
-        // transition: background-color 250ms linear;
 
         .card-set__link:hover &,
         .card-set__link:focus & {
@@ -54,7 +51,6 @@
 
 .card-set__description {
     color: var(--primary-text-color);
-    // transition: color 250ms linear;
 
     .card-set__link:hover &,
     .card-set__link:focus & {
