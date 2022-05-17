@@ -2520,6 +2520,11 @@ html {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/contacts/contacts-bg-mob@2x.png");
   }
 }
+.form__field {
+  display: block;
+  align-items: center;
+}
+
 .contacts__title {
   margin: 0 auto;
   font-family: "Montserrat";
@@ -2555,18 +2560,19 @@ html {
   justify-content: center;
 }
 
-.contacts__item:nth-child(1) {
+.form__field:nth-child(1) {
   margin-bottom: 32px;
 }
 
-.contacts__list {
+.form__input-wrapper {
+  display: block;
+  align-items: center;
   padding-left: 0;
-  list-style: none;
   margin-bottom: 40px;
   margin-top: 0;
 }
 
-.contacts__input {
+.form_input {
   padding-left: 24px;
   cursor: pointer;
   box-sizing: border-box;
@@ -2582,24 +2588,24 @@ html {
   transition: border var(--duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts__input:hover,
-.contacts__input:focus {
+.form_input:hover,
+.form_input:focus {
   border: 1px solid var(--accent-color);
 }
 
-.contacts__input::-moz-placeholder {
+.form_input::-moz-placeholder {
   color: var(--primary-bg-color);
 }
 
-.contacts__input:-ms-input-placeholder {
+.form_input:-ms-input-placeholder {
   color: var(--primary-bg-color);
 }
 
-.contacts__input::placeholder {
+.form_input::placeholder {
   color: var(--primary-bg-color);
 }
 
-.contacts__button {
+.form__send-btn {
   display: flex;
   justify-content: center;
   margin-left: auto;
@@ -2620,17 +2626,13 @@ html {
   transition: background-color var(--duration) cubic-bezier(0.4, 0, 0.2, 1), color var(--duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts__button:hover,
-.contacts__button:focus {
+.form__send-btn:hover,
+.form__send-btn:focus {
   background: var(--primary-bg-color);
   color: var(--footersecond-bg-color);
 }
 
-.contacts__input:invalid {
-  border-color: #DD2C00;
-}
-
-.contacts__tel:invalid {
+.form_input:invalid {
   border-color: #DD2C00;
 }
 
@@ -2662,17 +2664,17 @@ html {
   }
 }
 @media screen and (max-width: 767px) {
-  .contacts__item:nth-child(1) {
+  .form__field:nth-child(1) {
     margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 767px) {
-  .contacts__list {
+  .contacts__tel {
     margin-bottom: 40px;
   }
 }
 @media screen and (max-width: 767px) {
-  .contacts__input {
+  .form_input {
     padding-left: 28px;
     min-width: 280px;
     min-height: 48px;
@@ -2687,7 +2689,7 @@ html {
   }
 }
 @media screen and (max-width: 767px) {
-  .contacts__button {
+  .form__send-btn {
     min-width: 280px;
     min-height: 48px;
   }
@@ -2720,24 +2722,24 @@ html {
   }
 }
 @media screen and (min-width: 768px) {
-  .contacts__item:nth-child(1) {
+  .form__field:nth-child(1) {
     margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 768px) {
-  .contacts__list {
+  .form__input-wrapper {
     margin-bottom: 32px;
   }
 }
 @media screen and (min-width: 768px) {
-  .contacts__input {
+  .form_input {
     padding-left: 24px;
     width: 336px;
     height: 48px;
   }
 }
 @media screen and (min-width: 768px) {
-  .contacts__button {
+  .form__send-btn {
     width: 335px;
     height: 48px;
   }
@@ -2776,19 +2778,19 @@ html {
   }
 }
 @media screen and (min-width: 1680px) {
-  .contacts__list {
+  .form__field {
     margin-bottom: 40px;
   }
 }
 @media screen and (min-width: 1680px) {
-  .contacts__button {
+  .form__send-btn {
     font-size: 14px;
     line-height: 1.21;
     letter-spacing: 0.14em;
   }
 }
 @media screen and (min-width: 1680px) {
-  .contacts__input {
+  .form_input {
     font-size: 20px;
   }
 }

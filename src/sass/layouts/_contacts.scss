@@ -19,6 +19,10 @@
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/contacts/contacts-bg-mob@2x.png');
     }
 }
+.form__field {
+    display: block;
+    align-items: center;
+  }
 
 .contacts__title {
     margin: 0 auto;
@@ -55,18 +59,19 @@
     justify-content: center;
 }
 
-.contacts__item:nth-child(1) {
+.form__field:nth-child(1) {
     margin-bottom: 32px;
 }
 
-.contacts__list {
+.form__input-wrapper {
+    display: block;
+    align-items: center;
     padding-left: 0;
-    list-style: none;
     margin-bottom: 40px;
     margin-top: 0;
 }
 
-.contacts__input {
+.form_input {
     padding-left: 24px;
     cursor: pointer;
     box-sizing: border-box;
@@ -82,16 +87,16 @@
     transition: border var(--duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts__input:hover,
-.contacts__input:focus {
+.form_input:hover,
+.form_input:focus {
     border: 1px solid var(--accent-color);
 }
 
-.contacts__input::placeholder {
+.form_input::placeholder {
     color: var(--primary-bg-color);
 }
 
-.contacts__button {
+.form__send-btn {
     display: flex;
     justify-content: center;
     margin-left: auto;
@@ -112,18 +117,16 @@
     transition: background-color var(--duration) cubic-bezier(0.4, 0, 0.2, 1), color var(--duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts__button:hover,
-.contacts__button:focus {
+.form__send-btn:hover,
+.form__send-btn:focus {
     background: var(--primary-bg-color);
     color: var(--footersecond-bg-color);
 }
 
-.contacts__input:invalid {
+.form_input:invalid {
     border-color: #DD2C00;
 }
-.contacts__tel:invalid {
-    border-color: #DD2C00;
-}
+
 /* 0px - 768px  */
 @media screen and (max-width: 767px) {
     .section-contacts {
@@ -152,15 +155,15 @@
         margin-bottom: 40px;
     }
 
-    .contacts__item:nth-child(1) {
+    .form__field:nth-child(1) {
         margin-bottom: 20px;
     }
 
-    .contacts__list {
+    .contacts__tel {
         margin-bottom: 40px;
     }
 
-    .contacts__input {
+    .form_input {
         padding-left: 28px;
         min-width: 280px;
         min-height: 48px;
@@ -173,7 +176,7 @@
         max-width: 480px;
     }
 
-    .contacts__button {
+    .form__send-btn {
         min-width: 280px;
         min-height: 48px;
 
@@ -208,21 +211,21 @@
         margin-bottom: 24px;
     }
 
-    .contacts__item:nth-child(1) {
+    .form__field:nth-child(1) {
         margin-bottom: 20px;
     }
 
-    .contacts__list {
+    .form__input-wrapper {
         margin-bottom: 32px;
     }
 
-    .contacts__input {
+    .form_input {
         padding-left: 24px;
         width: 336px;
         height: 48px;
     }
 
-    .contacts__button {
+    .form__send-btn {
         width: 335px;
         height: 48px;
     }
@@ -262,16 +265,16 @@
         margin-bottom: 60px;
     }
 
-    .contacts__list {
+    .form__field {
         margin-bottom: 40px;
     }
 
-    .contacts__button {
+    .form__send-btn {
         font-size: 14px;
         line-height: 1.21;
         letter-spacing: 0.14em;
     }
-    .contacts__input {
+    .form_input {
         font-size: 20px;
     }
 }

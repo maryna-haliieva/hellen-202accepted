@@ -10,36 +10,37 @@
       <span class="contacts__subtitle-slogan">free lesson</span>. A consultant will contact you and
       answer your questions
     </p>
-    <form class="contacts__form" autocomplete="on">
-      <ul class="contacts__list">
-        <li class="contacts__item">
-          <label class="connection-field">
+    <form class="modal__form" autocomplete="on">
+      <div class="form__input-wrapper">
+        <label class="form__field">
+          <span class="form__user">
             <input
-              class="contacts__input"
-              type="text"
               name="name"
+              class="form_input"
+              type="text"
               placeholder="Name*"
-              pattern="[A-Za-z]{2,15}"
-              title="Username should only contain lowercase letters"
               autocomplete="name"
+              pattern="[A-Za-z]{2,15}"
+              aura-required="true"
+              minlength="2"
             />
-          </label>
-        </li>
-        <li class="contacts__item">
-          <label class="connection-field">
+            </span>
+        </label>
+        <label class="form__field">
+          <span class="form__user">
             <input
-              class="contacts__input contacts__tel"
+              name="user_tel"
+              class="form_input"
               type="tel"
-              name="phone-number"
               placeholder="Phone*"
-              pattern="[0-9]{10,15}"
-              title="Using only numbers"
               autocomplete="tel"
+              aura-required="true"
+              pattern="[0-9]{10}"
             />
-          </label>
-        </li>
-      </ul>
-      <button class="contacts__button" type="submit">i want a free lesson</button>
+          </span>
+        </label>
+      </div>
+      <button class="form__send-btn" type="submit">i want a free lesson</button>
     </form>
   </div>
 </section>
