@@ -136,6 +136,11 @@
 }
 
 @media screen and (max-width: 479px) {
+
+    .modal__section {
+        display: none;
+    }
+
     .modal__container {
         width: 290px;
     }
