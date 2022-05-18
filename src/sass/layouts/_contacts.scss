@@ -87,6 +87,7 @@
     letter-spacing: 0.08em;
     color: var(--primary-bg-color);
     transition: border var(--duration) cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: transparent;
 }
 
 .form_input:hover,
