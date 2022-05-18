@@ -5,44 +5,12 @@
   padding-bottom: 145px;
   transform: translateY(2px);
 
-
-  @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    .program {
-      background-image: url(../images/program/program-mob@2x.png);
-    }
-  }
-
   @media screen and (min-width: 768px) {
-
     padding-bottom: 180px;
-
-
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-      .program {
-        background-image: url(../images/program/program-tab@2x.png);
-      }
-
-    }
-
     padding-top: 60px;
   }
 
   @media screen and (min-width: 1680px) {
-
-
-
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-      .program {
-        background-image: url(../images/program/program-desk@2x.png);
-      }
-    }
-
     padding-top: 80px;
   }
 }
@@ -104,8 +72,6 @@
 .semester-list::after {
   position: absolute;
   content: url(../images/program/program-mob.png);
-  // left: 53%;
-  // bottom: 2%;
   transform: translate(54%, 862%);
   z-index: -3;
 
@@ -118,8 +84,6 @@
 
   @media screen and (min-width: 1680px) {
     content: url(../images/program/program-desk.png);
-    // left: 0;
-    // bottom: 0;
     transform: translate(-137%, 74%);
   }
 }
@@ -134,7 +98,6 @@
   }
 
   @media screen and (min-width: 1680px) {
-    // display: flex;
     padding-left: 0;
 
     &:not(:last-child) {
