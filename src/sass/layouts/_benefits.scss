@@ -31,12 +31,14 @@
 }
 
 .benefits__list {
+    position: relative;
     padding-top: 20px;
     padding-left: 32px;
     padding-right: 38px;
     padding-bottom: 24px;
     background-color: var(--primary-bg-color);
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+    z-index: 3;
 }
 
 .benefits__item {

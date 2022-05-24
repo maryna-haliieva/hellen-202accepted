@@ -3,70 +3,20 @@
   background-color: var(--secondary-bg-color);
   padding-top: 40px;
   padding-bottom: 145px;
-  transform: translateY(1px);
-
-
-  @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    .program {
-      background-image: url(../images/program/program-mob@2x.png);
-    }
-  }
+  transform: translateY(2px);
 
   @media screen and (min-width: 768px) {
-
     padding-bottom: 180px;
-
-
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-      .program {
-        background-image: url(../images/program/program-tab@2x.png);
-      }
-
-    }
-
     padding-top: 60px;
   }
 
   @media screen and (min-width: 1680px) {
-
-
-
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-      .program {
-        background-image: url(../images/program/program-desk@2x.png);
-      }
-    }
-
     padding-top: 80px;
   }
 }
 
-.program::after {
-  position: absolute;
-  content: url(../images/program/program-mob.png);
-  left: 53%;
-  bottom: 2%;
-
-  @media screen and (min-width: 768px) {
-    content: url(../images/program/program-tab.png);
-    left: 53%;
-  bottom: 5%;
-  }
-
-  @media screen and (min-width: 1680px) {
-    content: url(../images/program/program-desk.png);
-    left: 0;
-    bottom: 0;
-  }
-}
-
 .program-container {
+  position: relative;
   padding-left: 62px;
   padding-right: 56px;
 
@@ -119,6 +69,25 @@
   }
 }
 
+.semester-list::after {
+  position: absolute;
+  content: url(../images/program/program-mob.png);
+  transform: translate(54%, 862%);
+  z-index: -3;
+
+  @media screen and (min-width: 768px) {
+    content: url(../images/program/program-tab.png);
+    left: 53%;
+  bottom: 5%;
+  transform: translate(-2%, 60%);
+  }
+
+  @media screen and (min-width: 1680px) {
+    content: url(../images/program/program-desk.png);
+    transform: translate(-130%, 74%);
+  }
+}
+
 .semester-list__item {
   position: relative;
   width: 176px;
@@ -129,7 +98,6 @@
   }
 
   @media screen and (min-width: 1680px) {
-    // display: flex;
     padding-left: 0;
 
     &:not(:last-child) {
@@ -174,6 +142,7 @@
   @media screen and (min-width: 1680px) {
     font-size: 20px;
     line-height: 1.4;
+    width: 200px;
 
     &::before {
       position: absolute;
