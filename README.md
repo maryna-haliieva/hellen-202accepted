@@ -7,6 +7,9 @@ js - для мобільного меню,
 псевдоєлементи,
 якірні посилання,
 css-анімація. 
+
+
+
  
 
 Vitaly Bliskun
@@ -20,6 +23,9 @@ css-лічильник
 градієнт
 
 
+
+
+
 Uliana Vasylchenko
 Developer
 "How do we do it".
@@ -29,11 +35,16 @@ Developer
 Розробляла візуал презентації.
 
 
+
+
+
 Viktor Kovalov
 Developer
 “Our program”
 3-рівневий список з 
 позиціонуванням псевдоелементів.
+
+
 
 
 Olga12
@@ -48,6 +59,7 @@ About".
 
 
 
+
 Keshikimbo
 Developer
 Reveiwer,
@@ -56,6 +68,9 @@ Reveiwer,
  анімації за допомогою animate.style
 JS для кнопки Scroll to top.
 
+
+
+
 Evgenii
 Developer
 "Footer". "Contacts" 
@@ -63,6 +78,9 @@ Developer
 прописані данні для валідації
  анімації на інтерактивні елементи
  посилання на соціальні мережі
+
+
+
 
 
 Maryna Haliieva
