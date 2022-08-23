@@ -1,4 +1,4 @@
-Liliia Pishchuk
+1. Liliia Pishchuk
 Scrum master
 Header, Guarantee:
 
