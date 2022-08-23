@@ -12,7 +12,7 @@ css-анімація.
 
  
 
-Vitaly Bliskun
+2. Vitaly Bliskun
 Developer
 Advantages,
  Problems 
@@ -26,7 +26,7 @@ css-лічильник
 
 
 
-Uliana Vasylchenko
+3. Uliana Vasylchenko
 Developer
 "How do we do it".
 
@@ -38,7 +38,7 @@ Developer
 
 
 
-Viktor Kovalov
+4. Viktor Kovalov
 Developer
 “Our program”
 3-рівневий список з 
@@ -47,7 +47,7 @@ Developer
 
 
 
-Olga12
+5. Olga12
 Developer
 About".
 
@@ -60,7 +60,7 @@ About".
 
 
 
-Keshikimbo
+6. Keshikimbo
 Developer
 Reveiwer,
 
@@ -71,7 +71,7 @@ JS для кнопки Scroll to top.
 
 
 
-Evgenii
+7. Evgenii
 Developer
 "Footer". "Contacts" 
 
@@ -83,7 +83,7 @@ Developer
 
 
 
-Maryna Haliieva
+8. Maryna Haliieva
 Team Lead
 "Hero", "modal window"
 
